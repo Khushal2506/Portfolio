@@ -1,0 +1,1691 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khushal Rawal | Product Management & Strategy Portfolio | IIT Guwahati</title>
+  <meta name="description" content="Portfolio of Khushal Rawal - B.Tech at IIT Guwahati. Product Discovery, 0-to-1 Operations, D2C Growth and AI Strategy. Inter-IIT Tech Meet Bronze Medalist.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: { 50:'#f0fdf4', 500:'#22c55e', 600:'#16a34a', 700:'#15803d' },
+            slate: { 850:'#0f172a', 900:'#0b0f19', 950:'#030712' }
+          },
+          fontFamily: {
+            sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+            display: ['Plus Jakarta Sans', 'Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    .glass-card { background: rgba(15,23,42,0.65); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.08); }
+    .light .glass-card { background: rgba(255,255,255,0.9); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(0,0,0,0.08); box-shadow: 0 4px 20px -2px rgba(0,0,0,0.05); }
+    ::-webkit-scrollbar { width: 8px; height: 8px; }
+    ::-webkit-scrollbar-track { background: #030712; }
+    .light ::-webkit-scrollbar-track { background: #f1f5f9; }
+    ::-webkit-scrollbar-thumb { background: #1f2937; border-radius: 4px; }
+    .light ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+    @keyframes fadeIn { from { opacity: 0; transform: scale(0.98); } to { opacity: 1; transform: scale(1); } }
+    .animate-modal { animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+    @media print { .no-print { display: none !important; } body { background: white !important; color: black !important; } }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-emerald-500/20 selection:text-emerald-300 min-h-screen transition-colors duration-300">
+  <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-2 px-4 py-3 rounded-xl bg-emerald-500 text-slate-950 font-bold text-xs shadow-2xl">
+    <i data-lucide="check-circle" class="w-4 h-4"></i>
+    <span id="toast-text">Action successful</span>
+  </div>
+
+  <!-- NAVBAR -->
+  <header id="navbar" class="fixed top-0 left-0 right-0 z-40 transition-all duration-300 py-4 bg-slate-950/80 backdrop-blur-md border-b border-slate-800/80 light:bg-white/85 light:border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-700 flex items-center justify-center text-white font-bold font-display shadow-md shadow-emerald-500/20 group-hover:scale-105 transition-transform">
+          KR
+        </div>
+        <div>
+          <div class="font-display font-bold text-base sm:text-lg text-slate-100 light:text-slate-900 tracking-tight flex items-center gap-2">
+            Khushal Rawal
+            <span class="hidden sm:inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-medium bg-emerald-500/10 text-emerald-400 light:text-emerald-700 border border-emerald-500/20">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 mr-1.5 animate-pulse"></span>
+              IIT Guwahati
+            </span>
+          </div>
+          <p class="text-xs text-slate-400 light:text-slate-500 hidden md:block">
+            Product Management & Founder's Office
+          </p>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-6 text-sm font-medium text-slate-300 light:text-slate-600">
+        <a href="#impact" class="hover:text-emerald-400 light:hover:text-emerald-600 transition-colors">Impact</a>
+        <a href="#projects" class="hover:text-emerald-400 light:hover:text-emerald-600 transition-colors">Case Studies</a>
+        <a href="#experience" class="hover:text-emerald-400 light:hover:text-emerald-600 transition-colors">Experience</a>
+        <a href="#skills" class="hover:text-emerald-400 light:hover:text-emerald-600 transition-colors">Skills</a>
+        <a href="#leadership" class="hover:text-emerald-400 light:hover:text-emerald-600 transition-colors">Leadership & Honors</a>
+        <a href="#contact" class="hover:text-emerald-400 light:hover:text-emerald-600 transition-colors">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-2.5">
+        <button onclick="openRecruiterModal()" class="flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-emerald-500/15 hover:bg-emerald-500/25 text-emerald-400 light:text-emerald-700 border border-emerald-500/30 transition-all hover:scale-105 shadow-sm">
+          <i data-lucide="sparkles" class="w-3.5 h-3.5 text-emerald-400"></i>
+          <span class="hidden sm:inline">30s Recruiter View</span>
+          <span class="sm:hidden">HR View</span>
+        </button>
+
+        <button onclick="openResumeModal()" class="flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-900 hover:bg-slate-800 light:bg-slate-100 light:hover:bg-slate-200 text-slate-200 light:text-slate-800 border border-slate-800 light:border-slate-300 transition-colors">
+          <i data-lucide="file-text" class="w-3.5 h-3.5"></i>
+          <span>Resume</span>
+        </button>
+
+        <button onclick="toggleTheme()" class="p-2 rounded-lg text-slate-400 hover:text-slate-100 light:text-slate-600 light:hover:text-slate-900 bg-slate-900 light:bg-slate-100 border border-slate-800 light:border-slate-300 transition-colors" title="Toggle Theme">
+          <i id="theme-icon" data-lucide="sun" class="w-4 h-4 text-amber-400"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-emerald-500/10 dark:bg-emerald-500/10 light:bg-emerald-600/5 blur-[130px] rounded-full pointer-events-none -z-10"></div>
+    <div class="absolute top-1/3 right-10 w-[300px] h-[300px] bg-teal-500/5 blur-[90px] rounded-full pointer-events-none -z-10"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col items-center text-center max-w-4xl mx-auto">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/90 light:bg-slate-100 border border-slate-800 light:border-slate-300 text-xs font-medium text-slate-300 light:text-slate-700 mb-6 shadow-sm">
+          <span class="flex h-2 w-2 relative">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+          </span>
+          <span>Available for Full-Time Roles & Placements</span>
+          <span class="text-slate-600 light:text-slate-400">•</span>
+          <span class="text-emerald-400 light:text-emerald-700 font-semibold">IIT Guwahati</span>
+        </div>
+
+        <h1 class="font-display text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-slate-100 light:text-slate-900 leading-[1.1] mb-6">
+          Hi, I'm <span class="bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400 bg-clip-text text-transparent">Khushal Rawal</span>.
+          <br />
+          <span class="text-slate-300 light:text-slate-800 text-3xl sm:text-5xl lg:text-6xl font-bold">
+            Building Products with Data, AI & High Velocity.
+          </span>
+        </h1>
+
+        <p class="text-base sm:text-xl text-slate-400 light:text-slate-600 max-w-3xl mb-8 leading-relaxed">
+          Undergraduate at <strong class="text-slate-200 light:text-slate-800">IIT Guwahati</strong>. Experienced in <span class="text-emerald-400 light:text-emerald-700 font-semibold">Product Discovery</span>, <span class="text-emerald-400 light:text-emerald-700 font-semibold">0-to-1 Operations</span>, and <span class="text-emerald-400 light:text-emerald-700 font-semibold">AI Strategy</span>. Inter-IIT Tech Meet Bronze Medalist, D2C Founder & Founder's Office Operator.
+        </p>
+
+        <div class="flex flex-wrap items-center justify-center gap-3.5 mb-10 w-full">
+          <a href="#projects" class="px-6 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-sm flex items-center gap-2 shadow-lg shadow-emerald-500/25 transition-all hover:scale-105 active:scale-95">
+            <span>Explore Case Studies</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+
+          <button onclick="openRecruiterModal()" class="px-6 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 light:bg-slate-100 light:hover:bg-slate-200 text-slate-100 light:text-slate-900 border border-slate-700 light:border-slate-300 font-semibold text-sm flex items-center gap-2 transition-all hover:scale-105 active:scale-95">
+            <i data-lucide="sparkles" class="w-4 h-4 text-emerald-400"></i>
+            <span>30-Second Recruiter Pitch</span>
+          </button>
+
+          <button onclick="openResumeModal()" class="px-5 py-3 rounded-xl bg-slate-900/60 hover:bg-slate-900 light:bg-white light:hover:bg-slate-50 text-slate-300 light:text-slate-700 border border-slate-800 light:border-slate-300 font-medium text-sm flex items-center gap-2 transition-all hover:border-slate-600">
+            <i data-lucide="download" class="w-4 h-4"></i>
+            <span>View CV</span>
+          </button>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-center gap-3 pt-4 border-t border-slate-800/80 light:border-slate-200 w-full max-w-2xl">
+          <button onclick="copyToClipboard('khushalrawal2506@gmail.com', 'Email copied!')" class="flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-slate-900/70 light:bg-slate-100 hover:bg-slate-800 light:hover:bg-slate-200 border border-slate-800 light:border-slate-300 text-xs text-slate-300 light:text-slate-700 transition-colors" title="Click to copy email">
+            <i data-lucide="mail" class="w-3.5 h-3.5 text-emerald-400"></i>
+            <span>khushalrawal2506@gmail.com</span>
+            <i data-lucide="copy" class="w-3 h-3 text-slate-500"></i>
+          </button>
+
+          <a href="tel:+919257282136" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-900/70 light:bg-slate-100 hover:bg-slate-800 light:hover:bg-slate-200 border border-slate-800 light:border-slate-300 text-xs text-slate-300 light:text-slate-700 transition-colors">
+            <i data-lucide="phone" class="w-3.5 h-3.5 text-teal-400"></i>
+            <span>+91-9257282136</span>
+          </a>
+
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-900/70 light:bg-slate-100 hover:bg-slate-800 light:hover:bg-slate-200 border border-slate-800 light:border-slate-300 text-xs text-slate-300 light:text-slate-700 transition-colors">
+            <i data-lucide="linkedin" class="w-3.5 h-3.5 text-blue-400"></i>
+            <span>LinkedIn</span>
+            <i data-lucide="external-link" class="w-3 h-3 text-slate-500"></i>
+          </a>
+
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-900/70 light:bg-slate-100 hover:bg-slate-800 light:hover:bg-slate-200 border border-slate-800 light:border-slate-300 text-xs text-slate-300 light:text-slate-700 transition-colors">
+            <i data-lucide="github" class="w-3.5 h-3.5 text-slate-300 light:text-slate-700"></i>
+            <span>GitHub</span>
+            <i data-lucide="external-link" class="w-3 h-3 text-slate-500"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPACT NUMBERS -->
+  <section id="impact" class="py-16 bg-slate-900/40 light:bg-slate-50/70 border-y border-slate-800/80 light:border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-10">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-emerald-400 light:text-emerald-700">Proven Track Record</span>
+          <h2 class="text-2xl sm:text-3xl font-bold font-display text-slate-100 light:text-slate-900 mt-1">Impact by the Numbers</h2>
+        </div>
+        <p class="text-sm text-slate-400 light:text-slate-600 max-w-md mt-2 md:mt-0">
+          Measurable outcomes across product strategy, founder's office, revenue generation, and leadership.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="p-6 rounded-2xl glass-card border-emerald-500/25 bg-emerald-950/10 transition-all duration-300 hover:-translate-y-1">
+          <div class="flex items-center justify-between mb-4">
+            <div class="p-2.5 rounded-xl bg-slate-900 light:bg-slate-100 border border-slate-800 light:border-slate-200">
+              <i data-lucide="dollar-sign" class="w-5 h-5 text-emerald-400"></i>
+            </div>
+            <span class="px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-emerald-500/15 text-emerald-400 light:text-emerald-700 border border-emerald-500/30">High Impact</span>
+          </div>
+          <div class="font-display text-3xl sm:text-4xl font-extrabold text-slate-100 light:text-slate-900 tracking-tight mb-2">₹1 Cr+</div>
+          <h3 class="text-base font-semibold text-slate-200 light:text-slate-800 mb-1">Global Sponsorships Raised</h3>
+          <p class="text-xs text-slate-400 light:text-slate-600">From Optiver, Jane Street & QRT for The Integral Cup.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl glass-card transition-all duration-300 hover:-translate-y-1">
+          <div class="flex items-center justify-between mb-4">
+            <div class="p-2.5 rounded-xl bg-slate-900 light:bg-slate-100 border border-slate-800 light:border-slate-200">
+              <i data-lucide="trending-up" class="w-5 h-5 text-teal-400"></i>
+            </div>
+          </div>
+          <div class="font-display text-3xl sm:text-4xl font-extrabold text-slate-100 light:text-slate-900 tracking-tight mb-2">800%</div>
+          <h3 class="text-base font-semibold text-slate-200 light:text-slate-800 mb-1">MoM Growth Orchestrated</h3>
+          <p class="text-xs text-slate-400 light:text-slate-600">27+ premier Indian institutions onboarded nationwide.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl glass-card border-emerald-500/25 bg-emerald-950/10 transition-all duration-300 hover:-translate-y-1">
+          <div class="flex items-center justify-between mb-4">
+            <div class="p-2.5 rounded-xl bg-slate-900 light:bg-slate-100 border border-slate-800 light:border-slate-200">
+              <i data-lucide="award" class="w-5 h-5 text-amber-400"></i>
+            </div>
+            <span class="px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-emerald-500/15 text-emerald-400 light:text-emerald-700 border border-emerald-500/30">Bronze Medalist</span>
+          </div>
+          <div class="font-display text-3xl sm:text-4xl font-extrabold text-slate-100 light:text-slate-900 tracking-tight mb-2">Inter-IIT 13.0</div>
+          <h3 class="text-base font-semibold text-slate-200 light:text-slate-800 mb-1">Dream11 AI Product Strategy</h3>
+          <p class="text-xs text-slate-400 light:text-slate-600">Inter-IIT Tech Meet (IIT Bombay) bronze medal across all IITs.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl glass-card transition-all duration-300 hover:-translate-y-1">
+          <div class="flex items-center justify-between mb-4">
+            <div class="p-2.5 rounded-xl bg-slate-900 light:bg-slate-100 border border-slate-800 light:border-slate-200">
+              <i data-lucide="shield-check" class="w-5 h-5 text-cyan-400"></i>
+            </div>
+          </div>
+          <div class="font-display text-3xl sm:text-4xl font-extrabold text-slate-100 light:text-slate-900 tracking-tight mb-2">76%</div>
+          <h3 class="text-base font-semibold text-slate-200 light:text-slate-800 mb-1">Gross Margin D2C Brand</h3>
+          <p class="text-xs text-slate-400 light:text-slate-600">Bootstrapped Clockit Hair with 31.7k+ impressions & WhatsApp funnel.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl glass-card border-emerald-500/25 bg-emerald-950/10 transition-all duration-300 hover:-translate-y-1">
+          <div class="flex items-center justify-between mb-4">
+            <div class="p-2.5 rounded-xl bg-slate-900 light:bg-slate-100 border border-slate-800 light:border-slate-200">
+              <i data-lucide="trophy" class="w-5 h-5 text-emerald-400"></i>
+            </div>
+            <span class="px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-emerald-500/15 text-emerald-400 light:text-emerald-700 border border-emerald-500/30">1st Rank</span>
+          </div>
+          <div class="font-display text-3xl sm:text-4xl font-extrabold text-slate-100 light:text-slate-900 tracking-tight mb-2">1st / 200+</div>
+          <h3 class="text-base font-semibold text-slate-200 light:text-slate-800 mb-1">Policymaker Case Competition</h3>
+          <p class="text-xs text-slate-400 light:text-slate-600">Rank 1 out of 200+ nationwide teams on strategy formulation.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl glass-card transition-all duration-300 hover:-translate-y-1">
+          <div class="flex items-center justify-between mb-4">
+            <div class="p-2.5 rounded-xl bg-slate-900 light:bg-slate-100 border border-slate-800 light:border-slate-200">
+              <i data-lucide="heart" class="w-5 h-5 text-rose-400"></i>
+            </div>
+          </div>
+          <div class="font-display text-3xl sm:text-4xl font-extrabold text-slate-100 light:text-slate-900 tracking-tight mb-2">₹10 Lakhs</div>
+          <h3 class="text-base font-semibold text-slate-200 light:text-slate-800 mb-1">Fundraiser Social Impact</h3>
+          <p class="text-xs text-slate-400 light:text-slate-600">Rotary Rain Run for breast cancer awareness and patient care.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS & CASE STUDIES -->
+  <section id="projects" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-10">
+      <div>
+        <span class="text-xs font-bold uppercase tracking-widest text-emerald-400 light:text-emerald-700">Selected Works & Products</span>
+        <h2 class="text-3xl sm:text-4xl font-bold font-display text-slate-100 light:text-slate-900 mt-1">Featured Projects & Case Studies</h2>
+      </div>
+      <p class="text-sm text-slate-400 light:text-slate-600 max-w-md mt-2 md:mt-0">
+        Click any case study card to inspect the full product discovery, user research, ML pipelines, and quantifiable outcomes.
+      </p>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="flex items-center gap-2 overflow-x-auto pb-4 mb-8 no-scrollbar">
+      <div class="flex items-center gap-1.5 text-xs text-slate-500 mr-2">
+        <i data-lucide="filter" class="w-3.5 h-3.5"></i>
+        <span>Filter:</span>
+      </div>
+      <button onclick="filterProjects('All')" class="filter-btn active px-3.5 py-1.5 rounded-full text-xs font-semibold bg-emerald-500 text-slate-950 shadow-md shadow-emerald-500/20" data-category="All">All</button>
+      <button onclick="filterProjects('pm')" class="filter-btn px-3.5 py-1.5 rounded-full text-xs font-medium bg-slate-900 light:bg-slate-100 text-slate-400 light:text-slate-600 border border-slate-800 light:border-slate-200" data-category="pm">Product Management</button>
+      <button onclick="filterProjects('growth')" class="filter-btn px-3.5 py-1.5 rounded-full text-xs font-medium bg-slate-900 light:bg-slate-100 text-slate-400 light:text-slate-600 border border-slate-800 light:border-slate-200" data-category="growth">Founder's Office & Growth</button>
+      <button onclick="filterProjects('ai')" class="filter-btn px-3.5 py-1.5 rounded-full text-xs font-medium bg-slate-900 light:bg-slate-100 text-slate-400 light:text-slate-600 border border-slate-800 light:border-slate-200" data-category="ai">AI & Analytics</button>
+      <button onclick="filterProjects('strategy')" class="filter-btn px-3.5 py-1.5 rounded-full text-xs font-medium bg-slate-900 light:bg-slate-100 text-slate-400 light:text-slate-600 border border-slate-800 light:border-slate-200" data-category="strategy">Case Strategy</button>
+    </div>
+
+    <!-- Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6" id="projects-grid">
+      
+      <!-- 1: Dream11 -->
+      <div onclick="openCaseStudy('dream11')" class="project-card group p-6 sm:p-7 rounded-2xl glass-card relative cursor-pointer transition-all duration-300 hover:-translate-y-1.5 hover:border-emerald-500/50 flex flex-col justify-between" data-cats="pm ai strategy">
+        <div>
+          <div class="flex items-center justify-between gap-2 mb-4">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-emerald-500/15 text-emerald-400 light:text-emerald-700 border border-emerald-500/30">🥉 Bronze Medalist</span>
+              <span class="text-xs text-slate-400 light:text-slate-500 font-medium">Dec 2024</span>
+            </div>
+            <div class="w-8 h-8 rounded-full bg-slate-900 light:bg-slate-100 border border-slate-800 light:border-slate-300 flex items-center justify-center text-slate-400 group-hover:text-emerald-400 group-hover:rotate-45 transition-all">
+              <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+            </div>
+          </div>
+          <p class="text-xs font-semibold text-slate-400 light:text-slate-500 mb-1">Dream11 | Inter-IIT Tech Meet 13.0 (IIT Bombay)</p>
+          <h3 class="text-xl font-bold font-display text-slate-100 light:text-slate-900 group-hover:text-emerald-400 light:group-hover:text-emerald-700 transition-colors mb-3">
+            AI-Powered Fantasy Sports Product Growth Strategy
+          </h3>
+          <p class="text-sm text-slate-400 light:text-slate-600 mb-5 line-clamp-2 leading-relaxed">
+            Formulated a dual-UI product paradigm (Casual vs Pro) and integrated SHAP explainable AI for team recommendation transparency, backed by 220+ user survey insights.
+          </p>
+          <div class="grid grid-cols-2 gap-2 mb-5">
+            <div class="p-2.5 rounded-lg bg-slate-950/70 light:bg-slate-50 border border-slate-800/80 light:border-slate-200">
+              <span class="text-xs font-bold text-slate-200 light:text-slate-800 block">220+ User Responses</span>
+            </div>
+            <div class="p-2.5 rounded-lg bg-slate-950/70 light:bg-slate-50 border border-slate-800/80 light:border-slate-200">
+              <span class="text-xs font-bold text-slate-200 light:text-slate-800 block">R² = 0.91 ML Fit</span>
+            </div>
+          </div>
+        </div>
+        <div class="pt-4 border-t border-slate-800/80 light:border-slate-200 flex items-center justify-between">
+          <div class="flex gap-2 text-[11px] text-slate-400 light:text-slate-500">
+            <span>#ProductManagement</span><span>#ExplainableAI</span>
+          </div>
+          <span class="text-xs font-semibold text-emerald-400 light:text-emerald-700 flex items-center gap-1 group-hover:underline">View Case Study →</span>
+        </div>
+      </div>
+
+      <!-- 2: Integral Cup -->
+      <div onclick="openCaseStudy('integral-cup')" class="project-card group p-6 sm:p-7 rounded-2xl glass-card relative cursor-pointer transition-all duration-300 hover:-translate-y-1.5 hover:border-emerald-500/50 flex flex-col justify-between" data-cats="growth pm">
+        <div>
+          <div class="flex items-center justify-between gap-2 mb-4">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-emerald-500/15 text-emerald-400 light:text-emerald-700 border border-emerald-500/30">🚀 0-to-1 Scale</span>
+              <span class="text-xs text-slate-400 light:text-slate-500 font-medium">Jun 2025 - Dec 2026</span>
+            </div>
+            <div class="w-8 h-8 rounded-full bg-slate-900 light:bg-slate-100 border border-slate-800 light:border-slate-300 flex items-center justify-center text-slate-400 group-hover:text-emerald-400 group-hover:rotate-45 transition-all">
+              <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+            </div>
+          </div>
+          <p class="text-xs font-semibold text-slate-400 light:text-slate-500 mb-1">STEM Vibe | Founder's Office</p>
+          <h3 class="text-xl font-bold font-display text-slate-100 light:text-slate-900 group-hover:text-emerald-400 light:group-hover:text-emerald-700 transition-colors mb-3">
+            The Integral Cup — Operations & Nationwide GTM
+          </h3>
+          <p class="text-sm text-slate-400 light:text-slate-600 mb-5 line-clamp-2 leading-relaxed">
+            Scaled India's premier collegiate quant championship from scratch. Raised ₹1Cr+ from Optiver, Jane Street & QRT, and redesigned participant UX for 800% MoM growth.
+          </p>
+          <div class="grid grid-cols-2 gap-2 mb-5">
+            <div class="p-2.5 rounded-lg bg-slate-950/70 light:bg-slate-50 border border-slate-800/80 light:border-slate-200">
+              <span class="text-xs font-bold text-slate-200 light:text-slate-800 block">₹1Cr+ Raised</span>
+            </div>
+            <div class="p-2.5 rounded-lg bg-slate-950/70 light:bg-slate-50 border border-slate-800/80 light:border-slate-200">
+              <span class="text-xs font-bold text-slate-200 light:text-slate-800 block">27+ Premier Institutes</span>
+            </div>
+          </div>
+        </div>
+        <div class="pt-4 border-t border-slate-800/80 light:border-slate-200 flex items-center justify-between">
+          <div class="flex gap-2 text-[11px] text-slate-400 light:text-slate-500">
+            <span>#FoundersOffice</span><span>#Operations</span>
+          </div>
+          <span class="text-xs font-semibold text-emerald-400 light:text-emerald-700 flex items-center gap-1 group-hover:underline">View Case Study →</span>
+        </div>
+      </div>
+
+      <!-- 3: Clockit Hair -->
+      <div onclick="openCaseStudy('clockit-hair')" class="project-card group p-6 sm:p-7 rounded-2xl glass-card relative cursor-pointer transition-all duration-300 hover:-translate-y-1.5 hover:border-emerald-500/50 flex flex-col justify-between" data-cats="growth pm">
+        <div>
+          <div class="flex items-center justify-between gap-2 mb-4">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-emerald-500/15 text-emerald-400 light:text-emerald-700 border border-emerald-500/30">💰 76% Gross Margin</span>
+              <span class="text-xs text-slate-400 light:text-slate-500 font-medium">Jun 2026</span>
+            </div>
+            <div class="w-8 h-8 rounded-full bg-slate-900 light:bg-slate-100 border border-slate-800 light:border-slate-300 flex items-center justify-center text-slate-400 group-hover:text-emerald-400 group-hover:rotate-45 transition-all">
+              <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+            </div>
+          </div>
+          <p class="text-xs font-semibold text-slate-400 light:text-slate-500 mb-1">Clockit Hair (Startup Venture)</p>
+          <h3 class="text-xl font-bold font-display text-slate-100 light:text-slate-900 group-hover:text-emerald-400 light:group-hover:text-emerald-700 transition-colors mb-3">
+            Clockit Hair — Botanical D2C Startup Venture
+          </h3>
+          <p class="text-sm text-slate-400 light:text-slate-600 mb-5 line-clamp-2 leading-relaxed">
+            Bootstrapped rosemary hair care brand with automated conversational WhatsApp sales funnel, generating 31.7K+ views and converting 50+ customers in 90 days.
+          </p>
+          <div class="grid grid-cols-2 gap-2 mb-5">
+            <div class="p-2.5 rounded-lg bg-slate-950/70 light:bg-slate-50 border border-slate-800/80 light:border-slate-200">
+              <span class="text-xs font-bold text-slate-200 light:text-slate-800 block">31.7K+ Views</span>
+            </div>
+            <div class="p-2.5 rounded-lg bg-slate-950/70 light:bg-slate-50 border border-slate-800/80 light:border-slate-200">
+              <span class="text-xs font-bold text-slate-200 light:text-slate-800 block">76% Margin</span>
+            </div>
+          </div>
+        </div>
+        <div class="pt-4 border-t border-slate-800/80 light:border-slate-200 flex items-center justify-between">
+          <div class="flex gap-2 text-[11px] text-slate-400 light:text-slate-500">
+            <span>#D2CCommerce</span><span>#GrowthMarketing</span>
+          </div>
+          <span class="text-xs font-semibold text-emerald-400 light:text-emerald-700 flex items-center gap-1 group-hover:underline">View Case Study →</span>
+        </div>
+      </div>
+
+      <!-- 4: WorkLens -->
+      <div onclick="openCaseStudy('worklens')" class="project-card group p-6 sm:p-7 rounded-2xl glass-card relative cursor-pointer transition-all duration-300 hover:-translate-y-1.5 hover:border-emerald-500/50 flex flex-col justify-between" data-cats="pm ai">
+        <div>
+          <div class="flex items-center justify-between gap-2 mb-4">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-emerald-500/15 text-emerald-400 light:text-emerald-700 border border-emerald-500/30">🤖 Enterprise RAG</span>
+              <span class="text-xs text-slate-400 light:text-slate-500 font-medium">2026</span>
+            </div>
+            <div class="w-8 h-8 rounded-full bg-slate-900 light:bg-slate-100 border border-slate-800 light:border-slate-300 flex items-center justify-center text-slate-400 group-hover:text-emerald-400 group-hover:rotate-45 transition-all">
+              <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+            </div>
+          </div>
+          <p class="text-xs font-semibold text-slate-400 light:text-slate-500 mb-1">Personal AI Product Project</p>
+          <h3 class="text-xl font-bold font-display text-slate-100 light:text-slate-900 group-hover:text-emerald-400 light:group-hover:text-emerald-700 transition-colors mb-3">
+            WorkLens: Enterprise AI Knowledge Assistant
+          </h3>
+          <p class="text-sm text-slate-400 light:text-slate-600 mb-5 line-clamp-2 leading-relaxed">
+            Multi-source RAG knowledge system unifying Google Drive, Slack, and Notion with role-based access control, source citation verification, and 6 AI evaluation metrics.
+          </p>
+          <div class="grid grid-cols-2 gap-2 mb-5">
+            <div class="p-2.5 rounded-lg bg-slate-950/70 light:bg-slate-50 border border-slate-800/80 light:border-slate-200">
+              <span class="text-xs font-bold text-slate-200 light:text-slate-800 block">3+ Integrations</span>
+            </div>
+            <div class="p-2.5 rounded-lg bg-slate-950/70 light:bg-slate-50 border border-slate-800/80 light:border-slate-200">
+              <span class="text-xs font-bold text-slate-200 light:text-slate-800 block">6 AI Metrics</span>
+            </div>
+          </div>
+        </div>
+        <div class="pt-4 border-t border-slate-800/80 light:border-slate-200 flex items-center justify-between">
+          <div class="flex gap-2 text-[11px] text-slate-400 light:text-slate-500">
+            <span>#AIProductManagement</span><span>#RAGArchitecture</span>
+          </div>
+          <span class="text-xs font-semibold text-emerald-400 light:text-emerald-700 flex items-center gap-1 group-hover:underline">View Case Study →</span>
+        </div>
+      </div>
+
+      <!-- 5: Snukio -->
+      <div onclick="openCaseStudy('snukio')" class="project-card group p-6 sm:p-7 rounded-2xl glass-card relative cursor-pointer transition-all duration-300 hover:-translate-y-1.5 hover:border-emerald-500/50 flex flex-col justify-between" data-cats="growth strategy">
+        <div>
+          <div class="flex items-center justify-between gap-2 mb-4">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-emerald-500/15 text-emerald-400 light:text-emerald-700 border border-emerald-500/30">📊 Market Sizing</span>
+              <span class="text-xs text-slate-400 light:text-slate-500 font-medium">Jun 2026 - Jul 2026</span>
+            </div>
+            <div class="w-8 h-8 rounded-full bg-slate-900 light:bg-slate-100 border border-slate-800 light:border-slate-300 flex items-center justify-center text-slate-400 group-hover:text-emerald-400 group-hover:rotate-45 transition-all">
+              <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+            </div>
+          </div>
+          <p class="text-xs font-semibold text-slate-400 light:text-slate-500 mb-1">Snukio | Trove Ventures</p>
+          <h3 class="text-xl font-bold font-display text-slate-100 light:text-slate-900 group-hover:text-emerald-400 light:group-hover:text-emerald-700 transition-colors mb-3">
+            Snukio — $130B Sports Retail Market Sizing & GTM
+          </h3>
+          <p class="text-sm text-slate-400 light:text-slate-600 mb-5 line-clamp-2 leading-relaxed">
+            Built a 120+ point Voice-of-Customer framework across 3 stakeholder groups and 9 sports verticals to formulate Snukio's go-to-market entry playbook.
+          </p>
+          <div class="grid grid-cols-2 gap-2 mb-5">
+            <div class="p-2.5 rounded-lg bg-slate-950/70 light:bg-slate-50 border border-slate-800/80 light:border-slate-200">
+              <span class="text-xs font-bold text-slate-200 light:text-slate-800 block">120+ VoC Points</span>
+            </div>
+            <div class="p-2.5 rounded-lg bg-slate-950/70 light:bg-slate-50 border border-slate-800/80 light:border-slate-200">
+              <span class="text-xs font-bold text-slate-200 light:text-slate-800 block">$130B Sized</span>
+            </div>
+          </div>
+        </div>
+        <div class="pt-4 border-t border-slate-800/80 light:border-slate-200 flex items-center justify-between">
+          <div class="flex gap-2 text-[11px] text-slate-400 light:text-slate-500">
+            <span>#MarketResearch</span><span>#GTMPlaybook</span>
+          </div>
+          <span class="text-xs font-semibold text-emerald-400 light:text-emerald-700 flex items-center gap-1 group-hover:underline">View Case Study →</span>
+        </div>
+      </div>
+
+      <!-- 6: Estate Plus -->
+      <div onclick="openCaseStudy('estate-plus')" class="project-card group p-6 sm:p-7 rounded-2xl glass-card relative cursor-pointer transition-all duration-300 hover:-translate-y-1.5 hover:border-emerald-500/50 flex flex-col justify-between" data-cats="growth ai">
+        <div>
+          <div class="flex items-center justify-between gap-2 mb-4">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-emerald-500/15 text-emerald-400 light:text-emerald-700 border border-emerald-500/30">📈 Funnel Growth</span>
+              <span class="text-xs text-slate-400 light:text-slate-500 font-medium">May 2026 - Jun 2026</span>
+            </div>
+            <div class="w-8 h-8 rounded-full bg-slate-900 light:bg-slate-100 border border-slate-800 light:border-slate-300 flex items-center justify-center text-slate-400 group-hover:text-emerald-400 group-hover:rotate-45 transition-all">
+              <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+            </div>
+          </div>
+          <p class="text-xs font-semibold text-slate-400 light:text-slate-500 mb-1">Estate Plus</p>
+          <h3 class="text-xl font-bold font-display text-slate-100 light:text-slate-900 group-hover:text-emerald-400 light:group-hover:text-emerald-700 transition-colors mb-3">
+            Estate Plus — Funnel Optimization & Acquisition
+          </h3>
+          <p class="text-sm text-slate-400 light:text-slate-600 mb-5 line-clamp-2 leading-relaxed">
+            Conducted lead conversion analysis across 300+ leads in 8 cities, identifying funnel drop-offs and deploying SEO strategies with 50+ quality backlinks.
+          </p>
+          <div class="grid grid-cols-2 gap-2 mb-5">
+            <div class="p-2.5 rounded-lg bg-slate-950/70 light:bg-slate-50 border border-slate-800/80 light:border-slate-200">
+              <span class="text-xs font-bold text-slate-200 light:text-slate-800 block">450+ Prospects</span>
+            </div>
+            <div class="p-2.5 rounded-lg bg-slate-950/70 light:bg-slate-50 border border-slate-800/80 light:border-slate-200">
+              <span class="text-xs font-bold text-slate-200 light:text-slate-800 block">50+ Backlinks</span>
+            </div>
+          </div>
+        </div>
+        <div class="pt-4 border-t border-slate-800/80 light:border-slate-200 flex items-center justify-between">
+          <div class="flex gap-2 text-[11px] text-slate-400 light:text-slate-500">
+            <span>#FunnelAnalytics</span><span>#CustomerAcquisition</span>
+          </div>
+          <span class="text-xs font-semibold text-emerald-400 light:text-emerald-700 flex items-center gap-1 group-hover:underline">View Case Study →</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="py-20 bg-slate-900/30 light:bg-slate-50/50 border-t border-slate-800/80 light:border-slate-200">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-widest text-emerald-400 light:text-emerald-700">Work Experience</span>
+        <h2 class="text-3xl sm:text-4xl font-bold font-display text-slate-100 light:text-slate-900 mt-1">Execution & Roles</h2>
+        <p class="text-sm text-slate-400 light:text-slate-600 mt-2">
+          Proven execution across Founder's Office, Business Development, Market Sizing, and Growth.
+        </p>
+      </div>
+
+      <div class="relative border-l border-slate-800 light:border-slate-300 ml-4 md:ml-32 space-y-12">
+        <div class="relative pl-8 sm:pl-10 group">
+          <div class="absolute -left-3.5 top-1.5 w-7 h-7 rounded-full bg-slate-950 light:bg-white border-2 border-emerald-500 flex items-center justify-center shadow-md">
+            <div class="w-2 h-2 rounded-full bg-emerald-400"></div>
+          </div>
+          <div class="md:absolute md:-left-44 md:top-2 md:w-36 md:text-right hidden md:block">
+            <span class="text-xs font-semibold text-slate-400 light:text-slate-500">Jun 2025 – Dec 2026</span>
+            <p class="text-[11px] text-emerald-400 light:text-emerald-700 font-medium">Remote / National</p>
+          </div>
+          <div class="p-6 sm:p-7 rounded-2xl glass-card">
+            <div class="flex flex-wrap items-start justify-between gap-2 mb-3">
+              <div>
+                <h3 class="text-lg sm:text-xl font-bold font-display text-slate-100 light:text-slate-900">Founder’s Office</h3>
+                <p class="text-sm font-semibold text-emerald-400 light:text-emerald-700">STEM Vibe | The Integral Cup</p>
+              </div>
+              <div class="md:hidden flex flex-col items-end">
+                <span class="text-xs text-slate-400 light:text-slate-500 font-medium">Jun 2025 – Dec 2026</span>
+              </div>
+            </div>
+            <ul class="space-y-2.5 my-4">
+              <li class="flex items-start gap-2.5 text-sm text-slate-300 light:text-slate-700 leading-relaxed">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 light:text-emerald-600 mt-0.5 flex-shrink-0"></i>
+                <span>Owned end-to-end operations for the inaugural Integral Cup, driving <strong class="text-slate-100 light:text-slate-900">800% MoM growth</strong> across 27+ premier Indian institutions.</span>
+              </li>
+              <li class="flex items-start gap-2.5 text-sm text-slate-300 light:text-slate-700 leading-relaxed">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 light:text-emerald-600 mt-0.5 flex-shrink-0"></i>
+                <span>Pitched and raised <strong class="text-slate-100 light:text-slate-900">₹1 Cr+ in sponsorships</strong> from tier-1 quantitative trading firms: Optiver, Jane Street, and QRT.</span>
+              </li>
+              <li class="flex items-start gap-2.5 text-sm text-slate-300 light:text-slate-700 leading-relaxed">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 light:text-emerald-600 mt-0.5 flex-shrink-0"></i>
+                <span>Led a 10+ member core team and onboarded 27+ campus ambassadors nationwide to execute outreach and brand awareness.</span>
+              </li>
+              <li class="flex items-start gap-2.5 text-sm text-slate-300 light:text-slate-700 leading-relaxed">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 light:text-emerald-600 mt-0.5 flex-shrink-0"></i>
+                <span>Reshaped website UI/UX and streamlined 3-track participant registration funnel, optimizing user conversion rates.</span>
+              </li>
+            </ul>
+            <div class="flex flex-wrap gap-2 pt-3 border-t border-slate-800/60 light:border-slate-200">
+              <span class="px-2.5 py-0.5 rounded-md text-xs font-medium bg-slate-900 light:bg-slate-100 text-slate-300 light:text-slate-700 border border-slate-800 light:border-slate-200">Founder's Office</span>
+              <span class="px-2.5 py-0.5 rounded-md text-xs font-medium bg-slate-900 light:bg-slate-100 text-slate-300 light:text-slate-700 border border-slate-800 light:border-slate-200">Operations</span>
+              <span class="px-2.5 py-0.5 rounded-md text-xs font-medium bg-slate-900 light:bg-slate-100 text-slate-300 light:text-slate-700 border border-slate-800 light:border-slate-200">Sponsorships</span>
+              <span class="px-2.5 py-0.5 rounded-md text-xs font-medium bg-slate-900 light:bg-slate-100 text-slate-300 light:text-slate-700 border border-slate-800 light:border-slate-200">0-to-1</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative pl-8 sm:pl-10 group">
+          <div class="absolute -left-3.5 top-1.5 w-7 h-7 rounded-full bg-slate-950 light:bg-white border-2 border-emerald-500 flex items-center justify-center shadow-md">
+            <div class="w-2 h-2 rounded-full bg-emerald-400"></div>
+          </div>
+          <div class="md:absolute md:-left-44 md:top-2 md:w-36 md:text-right hidden md:block">
+            <span class="text-xs font-semibold text-slate-400 light:text-slate-500">May 2026 – Jun 2026</span>
+            <p class="text-[11px] text-emerald-400 light:text-emerald-700 font-medium">Internship</p>
+          </div>
+          <div class="p-6 sm:p-7 rounded-2xl glass-card">
+            <div class="flex flex-wrap items-start justify-between gap-2 mb-3">
+              <div>
+                <h3 class="text-lg sm:text-xl font-bold font-display text-slate-100 light:text-slate-900">Business Development Intern</h3>
+                <p class="text-sm font-semibold text-emerald-400 light:text-emerald-700">Estate Plus</p>
+              </div>
+              <div class="md:hidden flex flex-col items-end">
+                <span class="text-xs text-slate-400 light:text-slate-500 font-medium">May 2026 – Jun 2026</span>
+              </div>
+            </div>
+            <ul class="space-y-2.5 my-4">
+              <li class="flex items-start gap-2.5 text-sm text-slate-300 light:text-slate-700 leading-relaxed">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 light:text-emerald-600 mt-0.5 flex-shrink-0"></i>
+                <span>Expanded regional customer acquisition by engaging <strong class="text-slate-100 light:text-slate-900">450+ high-intent prospects</strong> across 8 cities and driving qualified leads.</span>
+              </li>
+              <li class="flex items-start gap-2.5 text-sm text-slate-300 light:text-slate-700 leading-relaxed">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 light:text-emerald-600 mt-0.5 flex-shrink-0"></i>
+                <span>Analyzed sales funnel conversion patterns across <strong class="text-slate-100 light:text-slate-900">300+ leads</strong> to identify friction stages and improve overall acquisition efficiency.</span>
+              </li>
+              <li class="flex items-start gap-2.5 text-sm text-slate-300 light:text-slate-700 leading-relaxed">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 light:text-emerald-600 mt-0.5 flex-shrink-0"></i>
+                <span>Increased organic reach and lead acquisition through SEO strategies, content optimization, and 50+ quality backlinks.</span>
+              </li>
+            </ul>
+            <div class="flex flex-wrap gap-2 pt-3 border-t border-slate-800/60 light:border-slate-200">
+              <span class="px-2.5 py-0.5 rounded-md text-xs font-medium bg-slate-900 light:bg-slate-100 text-slate-300 light:text-slate-700 border border-slate-800 light:border-slate-200">Funnel Analytics</span>
+              <span class="px-2.5 py-0.5 rounded-md text-xs font-medium bg-slate-900 light:bg-slate-100 text-slate-300 light:text-slate-700 border border-slate-800 light:border-slate-200">Customer Acquisition</span>
+              <span class="px-2.5 py-0.5 rounded-md text-xs font-medium bg-slate-900 light:bg-slate-100 text-slate-300 light:text-slate-700 border border-slate-800 light:border-slate-200">SEO Strategy</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative pl-8 sm:pl-10 group">
+          <div class="absolute -left-3.5 top-1.5 w-7 h-7 rounded-full bg-slate-950 light:bg-white border-2 border-emerald-500 flex items-center justify-center shadow-md">
+            <div class="w-2 h-2 rounded-full bg-emerald-400"></div>
+          </div>
+          <div class="md:absolute md:-left-44 md:top-2 md:w-36 md:text-right hidden md:block">
+            <span class="text-xs font-semibold text-slate-400 light:text-slate-500">Jun 2026 – Jul 2026</span>
+            <p class="text-[11px] text-emerald-400 light:text-emerald-700 font-medium">Internship</p>
+          </div>
+          <div class="p-6 sm:p-7 rounded-2xl glass-card">
+            <div class="flex flex-wrap items-start justify-between gap-2 mb-3">
+              <div>
+                <h3 class="text-lg sm:text-xl font-bold font-display text-slate-100 light:text-slate-900">Market Research Intern</h3>
+                <p class="text-sm font-semibold text-emerald-400 light:text-emerald-700">Snukio | Trove Ventures</p>
+              </div>
+              <div class="md:hidden flex flex-col items-end">
+                <span class="text-xs text-slate-400 light:text-slate-500 font-medium">Jun 2026 – Jul 2026</span>
+              </div>
+            </div>
+            <ul class="space-y-2.5 my-4">
+              <li class="flex items-start gap-2.5 text-sm text-slate-300 light:text-slate-700 leading-relaxed">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 light:text-emerald-600 mt-0.5 flex-shrink-0"></i>
+                <span>Built a comprehensive <strong class="text-slate-100 light:text-slate-900">120+ point Voice-of-Customer (VoC)</strong> model across 3 stakeholder groups.</span>
+              </li>
+              <li class="flex items-start gap-2.5 text-sm text-slate-300 light:text-slate-700 leading-relaxed">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 light:text-emerald-600 mt-0.5 flex-shrink-0"></i>
+                <span>Mapped consumer demand and purchasing behaviors across 9 distinct sports categories for Snukio’s nationwide GTM.</span>
+              </li>
+              <li class="flex items-start gap-2.5 text-sm text-slate-300 light:text-slate-700 leading-relaxed">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 light:text-emerald-600 mt-0.5 flex-shrink-0"></i>
+                <span>Sized India’s <strong class="text-slate-100 light:text-slate-900">$130B sports retail market</strong> and benchmarked 4 key competitors to identify 4 high-growth opportunities.</span>
+              </li>
+            </ul>
+            <div class="flex flex-wrap gap-2 pt-3 border-t border-slate-800/60 light:border-slate-200">
+              <span class="px-2.5 py-0.5 rounded-md text-xs font-medium bg-slate-900 light:bg-slate-100 text-slate-300 light:text-slate-700 border border-slate-800 light:border-slate-200">Market Sizing</span>
+              <span class="px-2.5 py-0.5 rounded-md text-xs font-medium bg-slate-900 light:bg-slate-100 text-slate-300 light:text-slate-700 border border-slate-800 light:border-slate-200">VoC Framework</span>
+              <span class="px-2.5 py-0.5 rounded-md text-xs font-medium bg-slate-900 light:bg-slate-100 text-slate-300 light:text-slate-700 border border-slate-800 light:border-slate-200">GTM Strategy</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-14">
+      <span class="text-xs font-bold uppercase tracking-widest text-emerald-400 light:text-emerald-700">Core Competencies</span>
+      <h2 class="text-3xl sm:text-4xl font-bold font-display text-slate-100 light:text-slate-900 mt-1">Skills & Toolkit</h2>
+      <p class="text-sm text-slate-400 light:text-slate-600 mt-2">
+        Multidisciplinary toolkit spanning product discovery, analytical rigor, rapid prototyping, and business strategy.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="p-6 sm:p-7 rounded-2xl glass-card">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="p-2.5 rounded-xl bg-emerald-500/10 text-emerald-400 light:text-emerald-700 border border-emerald-500/20">
+            <i data-lucide="layers" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold font-display text-slate-100 light:text-slate-900">Product Management</h3>
+            <p class="text-xs text-slate-400 light:text-slate-500">Strategy, UX & Discovery</p>
+          </div>
+        </div>
+        <div class="space-y-2.5">
+          <div class="flex items-center justify-between p-2.5 rounded-xl bg-slate-950/50 light:bg-slate-50 border border-slate-800/80 light:border-slate-200">
+            <span class="text-xs font-medium text-slate-200 light:text-slate-800">Product Discovery & User Research</span>
+            <span class="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 light:text-emerald-700 border border-emerald-500/20">Expert</span>
+          </div>
+          <div class="flex items-center justify-between p-2.5 rounded-xl bg-slate-950/50 light:bg-slate-50 border border-slate-800/80 light:border-slate-200">
+            <span class="text-xs font-medium text-slate-200 light:text-slate-800">Design Thinking & PRD Writing</span>
+            <span class="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 light:text-emerald-700 border border-emerald-500/20">Expert</span>
+          </div>
+          <div class="flex items-center justify-between p-2.5 rounded-xl bg-slate-950/50 light:bg-slate-50 border border-slate-800/80 light:border-slate-200">
+            <span class="text-xs font-medium text-slate-200 light:text-slate-800">Product Analytics & A/B Testing</span>
+            <span class="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 light:text-emerald-700 border border-emerald-500/20">Advanced</span>
+          </div>
+          <div class="flex items-center justify-between p-2.5 rounded-xl bg-slate-950/50 light:bg-slate-50 border border-slate-800/80 light:border-slate-200">
+            <span class="text-xs font-medium text-slate-200 light:text-slate-800">Roadmap & RICE Prioritization</span>
+            <span class="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 light:text-emerald-700 border border-emerald-500/20">Advanced</span>
+          </div>
+          <div class="flex items-center justify-between p-2.5 rounded-xl bg-slate-950/50 light:bg-slate-50 border border-slate-800/80 light:border-slate-200">
+            <span class="text-xs font-medium text-slate-200 light:text-slate-800">North Star & Metric Pyramids</span>
+            <span class="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 light:text-emerald-700 border border-emerald-500/20">Advanced</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-6 sm:p-7 rounded-2xl glass-card">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="p-2.5 rounded-xl bg-teal-500/10 text-teal-400 light:text-teal-700 border border-teal-500/20">
+            <i data-lucide="bar-chart-3" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold font-display text-slate-100 light:text-slate-900">Business & Strategy</h3>
+            <p class="text-xs text-slate-400 light:text-slate-500">Growth, GTM & Economics</p>
+          </div>
+        </div>
+        <div class="space-y-2.5">
+          <div class="flex items-center justify-between p-2.5 rounded-xl bg-slate-950/50 light:bg-slate-50 border border-slate-800/80 light:border-slate-200">
+            <span class="text-xs font-medium text-slate-200 light:text-slate-800">Conversion Funnel Analysis</span>
+            <span class="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-teal-500/10 text-teal-400 light:text-teal-700 border border-teal-500/20">Expert</span>
+          </div>
+          <div class="flex items-center justify-between p-2.5 rounded-xl bg-slate-950/50 light:bg-slate-50 border border-slate-800/80 light:border-slate-200">
+            <span class="text-xs font-medium text-slate-200 light:text-slate-800">Market Sizing & Guesstimates</span>
+            <span class="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-teal-500/10 text-teal-400 light:text-teal-700 border border-teal-500/20">Expert</span>
+          </div>
+          <div class="flex items-center justify-between p-2.5 rounded-xl bg-slate-950/50 light:bg-slate-50 border border-slate-800/80 light:border-slate-200">
+            <span class="text-xs font-medium text-slate-200 light:text-slate-800">Unit Economics (CAC, LTV, ROAS)</span>
+            <span class="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-teal-500/10 text-teal-400 light:text-teal-700 border border-teal-500/20">Expert</span>
+          </div>
+          <div class="flex items-center justify-between p-2.5 rounded-xl bg-slate-950/50 light:bg-slate-50 border border-slate-800/80 light:border-slate-200">
+            <span class="text-xs font-medium text-slate-200 light:text-slate-800">Case Interviews & Strategy</span>
+            <span class="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-teal-500/10 text-teal-400 light:text-teal-700 border border-teal-500/20">Advanced</span>
+          </div>
+          <div class="flex items-center justify-between p-2.5 rounded-xl bg-slate-950/50 light:bg-slate-50 border border-slate-800/80 light:border-slate-200">
+            <span class="text-xs font-medium text-slate-200 light:text-slate-800">Stakeholder Pitching</span>
+            <span class="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-teal-500/10 text-teal-400 light:text-teal-700 border border-teal-500/20">Expert</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-6 sm:p-7 rounded-2xl glass-card">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="p-2.5 rounded-xl bg-cyan-500/10 text-cyan-400 light:text-cyan-700 border border-cyan-500/20">
+            <i data-lucide="code-2" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold font-display text-slate-100 light:text-slate-900">Tech Stack & Tools</h3>
+            <p class="text-xs text-slate-400 light:text-slate-500">Analytics, SQL & Design</p>
+          </div>
+        </div>
+        <div class="space-y-2.5">
+          <div class="flex items-center justify-between p-2.5 rounded-xl bg-slate-950/50 light:bg-slate-50 border border-slate-800/80 light:border-slate-200">
+            <span class="text-xs font-medium text-slate-200 light:text-slate-800">Python (Pandas, NumPy, Scikit)</span>
+            <span class="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-cyan-500/10 text-cyan-400 light:text-cyan-700 border border-cyan-500/20">Advanced</span>
+          </div>
+          <div class="flex items-center justify-between p-2.5 rounded-xl bg-slate-950/50 light:bg-slate-50 border border-slate-800/80 light:border-slate-200">
+            <span class="text-xs font-medium text-slate-200 light:text-slate-800">MySQL & Relational Queries</span>
+            <span class="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-cyan-500/10 text-cyan-400 light:text-cyan-700 border border-cyan-500/20">Advanced</span>
+          </div>
+          <div class="flex items-center justify-between p-2.5 rounded-xl bg-slate-950/50 light:bg-slate-50 border border-slate-800/80 light:border-slate-200">
+            <span class="text-xs font-medium text-slate-200 light:text-slate-800">Power BI & Dashboards</span>
+            <span class="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-cyan-500/10 text-cyan-400 light:text-cyan-700 border border-cyan-500/20">Advanced</span>
+          </div>
+          <div class="flex items-center justify-between p-2.5 rounded-xl bg-slate-950/50 light:bg-slate-50 border border-slate-800/80 light:border-slate-200">
+            <span class="text-xs font-medium text-slate-200 light:text-slate-800">Figma & UI Prototyping</span>
+            <span class="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-cyan-500/10 text-cyan-400 light:text-cyan-700 border border-cyan-500/20">Advanced</span>
+          </div>
+          <div class="flex items-center justify-between p-2.5 rounded-xl bg-slate-950/50 light:bg-slate-50 border border-slate-800/80 light:border-slate-200">
+            <span class="text-xs font-medium text-slate-200 light:text-slate-800">SolidWorks, AutoCAD & MATLAB</span>
+            <span class="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-cyan-500/10 text-cyan-400 light:text-cyan-700 border border-cyan-500/20">Proficient</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-8 p-6 rounded-2xl bg-slate-900/60 light:bg-slate-50 border border-slate-800 light:border-slate-200">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+        <div class="flex items-center gap-3">
+          <i data-lucide="book-open" class="w-5 h-5 text-emerald-400 light:text-emerald-600 flex-shrink-0"></i>
+          <div>
+            <h4 class="text-sm font-bold text-slate-100 light:text-slate-900">Key Academic & Specialized Coursework</h4>
+            <p class="text-xs text-slate-400 light:text-slate-500">Formal training in Product Strategy, Machine Learning, and Computer Vision at IIT Guwahati.</p>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 rounded-lg text-xs font-semibold bg-slate-950 light:bg-white text-emerald-400 light:text-emerald-700 border border-slate-800 light:border-slate-300">Product Matters 5.0 (E-Cell)</span>
+          <span class="px-3 py-1 rounded-lg text-xs font-semibold bg-slate-950 light:bg-white text-emerald-400 light:text-emerald-700 border border-slate-800 light:border-slate-300">Summer Analytics</span>
+          <span class="px-3 py-1 rounded-lg text-xs font-semibold bg-slate-950 light:bg-white text-emerald-400 light:text-emerald-700 border border-slate-800 light:border-slate-300">(DA 6021) Deep Learning for Computer Vision</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEADERSHIP & HONORS -->
+  <section id="leadership" class="py-20 bg-slate-900/30 light:bg-slate-50/50 border-t border-slate-800/80 light:border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-emerald-400 light:text-emerald-700">Beyond Academics</span>
+          <h2 class="text-3xl sm:text-4xl font-bold font-display text-slate-100 light:text-slate-900 mt-1">Leadership, Honors & Social Impact</h2>
+        </div>
+      </div>
+
+      <div class="mb-14">
+        <h3 class="text-lg font-bold font-display text-slate-100 light:text-slate-900 mb-6 flex items-center gap-2">
+          <i data-lucide="users" class="w-5 h-5 text-emerald-400"></i>
+          Positions of Responsibility
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="p-6 rounded-2xl glass-card border border-slate-800 light:border-slate-200 flex flex-col justify-between">
+            <div>
+              <span class="text-[11px] font-semibold text-emerald-400 light:text-emerald-700 block mb-1">July 2025 – Jan 2026</span>
+              <h4 class="text-base font-bold text-slate-100 light:text-slate-900 mb-1">Branch Representative</h4>
+              <p class="text-xs font-semibold text-slate-400 light:text-slate-500 mb-3">Mechanical Engineering Dept, IIT Guwahati</p>
+              <p class="text-xs sm:text-sm text-slate-300 light:text-slate-600 leading-relaxed">
+                Representing a batch of 75+ peers, organizing alumni interactions, and hosting academic and career-focused workshops.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-800/80 light:border-slate-200">
+              <span class="text-[11px] font-semibold text-slate-400 light:text-slate-500 bg-slate-950/60 light:bg-slate-100 px-2.5 py-1 rounded-md border border-slate-800/60 light:border-slate-200">
+                75+ Batch Peers • Career Workshops
+              </span>
+            </div>
+          </div>
+
+          <div class="p-6 rounded-2xl glass-card border border-slate-800 light:border-slate-200 flex flex-col justify-between">
+            <div>
+              <span class="text-[11px] font-semibold text-emerald-400 light:text-emerald-700 block mb-1">May 2025 – Oct 2025</span>
+              <h4 class="text-base font-bold text-slate-100 light:text-slate-900 mb-1">Execution Head — Auditorium</h4>
+              <p class="text-xs font-semibold text-slate-400 light:text-slate-500 mb-3">Alcheringa, Cultural Fest, IIT Guwahati</p>
+              <p class="text-xs sm:text-sm text-slate-300 light:text-slate-600 leading-relaxed">
+                Led venue operations as Auditorium Head, conducting 10+ competitions with 200+ participants and managing Day 0 inauguration.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-800/80 light:border-slate-200">
+              <span class="text-[11px] font-semibold text-slate-400 light:text-slate-500 bg-slate-950/60 light:bg-slate-100 px-2.5 py-1 rounded-md border border-slate-800/60 light:border-slate-200">
+                200+ Participants • Day 0 Head
+              </span>
+            </div>
+          </div>
+
+          <div class="p-6 rounded-2xl glass-card border border-slate-800 light:border-slate-200 flex flex-col justify-between">
+            <div>
+              <span class="text-[11px] font-semibold text-emerald-400 light:text-emerald-700 block mb-1">2024 – 2025</span>
+              <h4 class="text-base font-bold text-slate-100 light:text-slate-900 mb-1">Peer Mentor</h4>
+              <p class="text-xs font-semibold text-slate-400 light:text-slate-500 mb-3">IIT Guwahati Mentorship Program</p>
+              <p class="text-xs sm:text-sm text-slate-300 light:text-slate-600 leading-relaxed">
+                Guided a group of 10 freshers and sophomores, addressing both academic roadmaps and non-academic campus challenges.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-800/80 light:border-slate-200">
+              <span class="text-[11px] font-semibold text-slate-400 light:text-slate-500 bg-slate-950/60 light:bg-slate-100 px-2.5 py-1 rounded-md border border-slate-800/60 light:border-slate-200">
+                10 Mentees Mentored
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="text-lg font-bold font-display text-slate-100 light:text-slate-900 mb-6 flex items-center gap-2">
+          <i data-lucide="trophy" class="w-5 h-5 text-amber-400"></i>
+          Honors, Awards & Athletic Highlights
+        </h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div class="p-5 rounded-2xl bg-slate-950/60 light:bg-white border border-slate-800 light:border-slate-200 flex items-start gap-4">
+            <div class="p-2.5 rounded-xl bg-slate-900 light:bg-slate-100 border border-slate-800 light:border-slate-200 flex-shrink-0 mt-0.5">
+              <i data-lucide="award" class="w-5 h-5 text-amber-400"></i>
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-slate-100 light:text-slate-900 leading-snug">Bronze Medal — Inter-IIT Tech Meet 13.0</h4>
+              <p class="text-[11px] font-semibold text-emerald-400 light:text-emerald-700 my-0.5">IIT Bombay (Dec 2024)</p>
+              <p class="text-xs text-slate-400 light:text-slate-600 leading-relaxed mt-1">Dream11 AI Product Growth Strategy with SHAP explainability.</p>
+            </div>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-slate-950/60 light:bg-white border border-slate-800 light:border-slate-200 flex items-start gap-4">
+            <div class="p-2.5 rounded-xl bg-slate-900 light:bg-slate-100 border border-slate-800 light:border-slate-200 flex-shrink-0 mt-0.5">
+              <i data-lucide="trophy" class="w-5 h-5 text-emerald-400"></i>
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-slate-100 light:text-slate-900 leading-snug">1st Rank / 200+ Teams</h4>
+              <p class="text-[11px] font-semibold text-emerald-400 light:text-emerald-700 my-0.5">Policymaker Case Competition 2024</p>
+              <p class="text-xs text-slate-400 light:text-slate-600 leading-relaxed mt-1">Secured 1st place in national strategy and policy formulation for Northeast India.</p>
+            </div>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-slate-950/60 light:bg-white border border-slate-800 light:border-slate-200 flex items-start gap-4">
+            <div class="p-2.5 rounded-xl bg-slate-900 light:bg-slate-100 border border-slate-800 light:border-slate-200 flex-shrink-0 mt-0.5">
+              <i data-lucide="check-circle" class="w-5 h-5 text-teal-400"></i>
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-slate-100 light:text-slate-900 leading-snug">Top 15% in Product Matters 5.0</h4>
+              <p class="text-[11px] font-semibold text-emerald-400 light:text-emerald-700 my-0.5">E-Cell, IIT Guwahati</p>
+              <p class="text-xs text-slate-400 light:text-slate-600 leading-relaxed mt-1">Demonstrated strong product management and discovery frameworks.</p>
+            </div>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-slate-950/60 light:bg-white border border-slate-800 light:border-slate-200 flex items-start gap-4">
+            <div class="p-2.5 rounded-xl bg-slate-900 light:bg-slate-100 border border-slate-800 light:border-slate-200 flex-shrink-0 mt-0.5">
+              <i data-lucide="star" class="w-5 h-5 text-yellow-400"></i>
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-slate-100 light:text-slate-900 leading-snug">Product Pro 3.0 Recognition</h4>
+              <p class="text-[11px] font-semibold text-emerald-400 light:text-emerald-700 my-0.5">IIT Guwahati</p>
+              <p class="text-xs text-slate-400 light:text-slate-600 leading-relaxed mt-1">Recognized for impactful product contribution in competitive development challenge.</p>
+            </div>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-slate-950/60 light:bg-white border border-slate-800 light:border-slate-200 flex items-start gap-4">
+            <div class="p-2.5 rounded-xl bg-slate-900 light:bg-slate-100 border border-slate-800 light:border-slate-200 flex-shrink-0 mt-0.5">
+              <i data-lucide="activity" class="w-5 h-5 text-cyan-400"></i>
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-slate-100 light:text-slate-900 leading-snug">Represented IIT Guwahati</h4>
+              <p class="text-[11px] font-semibold text-emerald-400 light:text-emerald-700 my-0.5">Inter-IIT Hockey Tournament</p>
+              <p class="text-xs text-slate-400 light:text-slate-600 leading-relaxed mt-1">Competed against premier IIT varsity hockey teams across India.</p>
+            </div>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-slate-950/60 light:bg-white border border-slate-800 light:border-slate-200 flex items-start gap-4">
+            <div class="p-2.5 rounded-xl bg-slate-900 light:bg-slate-100 border border-slate-800 light:border-slate-200 flex-shrink-0 mt-0.5">
+              <i data-lucide="heart" class="w-5 h-5 text-rose-400"></i>
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-slate-100 light:text-slate-900 leading-snug">Raised ₹10 Lakhs (Social Work)</h4>
+              <p class="text-[11px] font-semibold text-emerald-400 light:text-emerald-700 my-0.5">Rotary Rain Run</p>
+              <p class="text-xs text-slate-400 light:text-slate-600 leading-relaxed mt-1">Organized fundraiser campaigns for breast cancer awareness and care.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT & FOOTER -->
+  <footer id="contact" class="pt-20 pb-12 bg-slate-950 light:bg-white border-t border-slate-800/80 light:border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="p-8 sm:p-12 rounded-3xl bg-gradient-to-b from-slate-900/90 to-slate-950 light:from-slate-50 light:to-slate-100 border border-slate-800 light:border-slate-300 relative overflow-hidden mb-16 shadow-2xl">
+        <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          <div class="lg:col-span-7 space-y-4">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 light:text-emerald-700 text-xs font-semibold border border-emerald-500/20">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+              Placement Season 2026-2027
+            </div>
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-display text-slate-100 light:text-slate-900 leading-tight">
+              Let's discuss how I can add immediate value to your team.
+            </h2>
+            <p class="text-sm sm:text-base text-slate-400 light:text-slate-600 max-w-xl leading-relaxed">
+              Available for <strong class="text-slate-200 light:text-slate-800">Associate Product Manager (APM)</strong>, <strong class="text-slate-200 light:text-slate-800">Founder's Office & Strategy</strong>, and <strong class="text-slate-200 light:text-slate-800">Product Growth</strong> roles.
+            </p>
+            <div class="flex flex-wrap items-center gap-3 pt-2">
+              <button onclick="copyToClipboard('khushalrawal2506@gmail.com', 'Email copied!')" class="px-5 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs flex items-center gap-2 shadow-md shadow-emerald-500/20 transition-all active:scale-95">
+                <i data-lucide="copy" class="w-4 h-4"></i>
+                <span>Copy Email Address</span>
+              </button>
+              <a href="mailto:khushalrawal2506@gmail.com" class="px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 light:bg-slate-200 light:hover:bg-slate-300 text-slate-200 light:text-slate-800 font-semibold text-xs flex items-center gap-2 transition-colors">
+                <i data-lucide="mail" class="w-4 h-4 text-emerald-400"></i>
+                <span>Send Direct Email</span>
+              </a>
+              <button onclick="openRecruiterModal()" class="px-5 py-2.5 rounded-xl bg-slate-900 light:bg-white border border-slate-700 light:border-slate-300 text-slate-300 light:text-slate-700 text-xs font-semibold hover:border-emerald-500 transition-colors">
+                30s Recruiter Pitch
+              </button>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 p-6 rounded-2xl bg-slate-950/80 light:bg-white border border-slate-800 light:border-slate-200">
+            <h3 class="text-sm font-bold text-slate-100 light:text-slate-900 mb-1">Quick Recruiter Ping</h3>
+            <p class="text-xs text-slate-400 light:text-slate-500 mb-4">Leave a quick note and I'll get back right away.</p>
+            <form onsubmit="handleContactSubmit(event)" class="space-y-3">
+              <input type="text" required placeholder="Your Name & Company" class="w-full px-3.5 py-2 rounded-xl bg-slate-900 light:bg-slate-50 border border-slate-800 light:border-slate-300 text-xs text-slate-100 light:text-slate-900 focus:outline-none focus:border-emerald-500" />
+              <input type="email" required placeholder="Work Email" class="w-full px-3.5 py-2 rounded-xl bg-slate-900 light:bg-slate-50 border border-slate-800 light:border-slate-300 text-xs text-slate-100 light:text-slate-900 focus:outline-none focus:border-emerald-500" />
+              <textarea rows="3" required placeholder="Opportunity details or meeting invite..." class="w-full px-3.5 py-2 rounded-xl bg-slate-900 light:bg-slate-50 border border-slate-800 light:border-slate-300 text-xs text-slate-100 light:text-slate-900 focus:outline-none focus:border-emerald-500 resize-none"></textarea>
+              <button type="submit" class="w-full py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs flex items-center justify-center gap-1.5 shadow-sm transition-colors">
+                <i data-lucide="send" class="w-3.5 h-3.5"></i>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 border-t border-slate-800/80 light:border-slate-200 text-xs text-slate-400 light:text-slate-600">
+        <div class="flex items-center gap-2">
+          <span class="font-semibold text-slate-200 light:text-slate-800">Khushal Rawal</span>
+          <span>•</span>
+          <span>IIT Guwahati</span>
+          <span>•</span>
+          <span>+91-9257282136</span>
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="https://linkedin.com" target="_blank" class="hover:text-emerald-400 transition-colors">LinkedIn</a>
+          <a href="https://github.com" target="_blank" class="hover:text-emerald-400 transition-colors">GitHub</a>
+          <button onclick="openResumeModal()" class="hover:text-emerald-400 transition-colors">View CV</button>
+          <a href="#" class="p-2 rounded-lg bg-slate-900 light:bg-slate-100 hover:bg-slate-800 text-slate-300 light:text-slate-700 transition-colors">
+            <i data-lucide="arrow-up" class="w-3.5 h-3.5"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- RECRUITER 30-SEC MODAL -->
+  <div id="recruiter-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 sm:p-6 md:p-10">
+    <div class="absolute inset-0 bg-slate-950/85 backdrop-blur-md" onclick="closeRecruiterModal()"></div>
+    <div class="relative w-full max-w-3xl max-h-[90vh] bg-slate-900 light:bg-white border border-slate-700 light:border-slate-300 rounded-2xl shadow-2xl overflow-hidden flex flex-col z-10 animate-modal">
+      <div class="px-6 py-5 border-b border-slate-800 light:border-slate-200 bg-slate-950/70 light:bg-slate-50 flex items-start justify-between">
+        <div class="flex items-center gap-3">
+          <div class="p-2.5 rounded-xl bg-emerald-500/15 text-emerald-400 light:text-emerald-700 border border-emerald-500/30">
+            <i data-lucide="sparkles" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <span class="px-2 py-0.5 rounded-full text-[11px] font-bold bg-emerald-500/10 text-emerald-400 light:text-emerald-700 border border-emerald-500/20">
+              ⚡ HR & RECRUITER FAST-TRACK
+            </span>
+            <h2 class="text-xl font-bold font-display text-slate-100 light:text-slate-900 mt-1">30-Second Candidate Evaluation</h2>
+          </div>
+        </div>
+        <button onclick="closeRecruiterModal()" class="p-2 rounded-xl bg-slate-800 light:bg-slate-100 hover:bg-slate-700 text-slate-400 light:text-slate-600 transition-colors">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <div class="p-6 sm:p-8 overflow-y-auto space-y-6 text-sm text-slate-300 light:text-slate-700">
+        <div class="p-5 rounded-2xl bg-slate-950/60 light:bg-slate-50 border border-slate-800 light:border-slate-200">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-2">
+            <div>
+              <h3 class="text-lg font-bold font-display text-slate-100 light:text-slate-900">Khushal Rawal</h3>
+              <p class="text-xs text-slate-400 light:text-slate-600">B.Tech in Mechanical Engineering • <strong class="text-emerald-400 light:text-emerald-700">IIT Guwahati</strong> (CGPA: 7.00)</p>
+            </div>
+            <span class="px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/15 text-emerald-400 light:text-emerald-700 border border-emerald-500/30">
+              Open for Placements
+            </span>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-300 light:text-slate-600 leading-relaxed mt-2">
+            High-agency IIT Guwahati undergraduate combining deep product intuition, quantitative rigor, and high-velocity 0-to-1 execution. Raised ₹1Cr+ in global sponsorships, built a profitable D2C brand (76% gross margin), and won Bronze at Inter-IIT Tech Meet.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 light:text-slate-500 mb-3 flex items-center gap-2">
+            <i data-lucide="zap" class="w-4 h-4 text-amber-400"></i> Why Khushal is a Top-Tier Candidate
+          </h4>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+            <div class="p-4 rounded-xl bg-slate-950/40 light:bg-slate-50 border border-slate-800/80 light:border-slate-200">
+              <h5 class="text-xs font-bold text-slate-100 light:text-slate-900 mb-1.5 flex items-center gap-1.5">
+                <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-emerald-400"></i> 0-to-1 Founder Track
+              </h5>
+              <p class="text-xs text-slate-400 light:text-slate-600">Scaled The Integral Cup across 27+ institutes, securing ₹1Cr+ from Optiver/Jane Street/QRT. Bootstrapped Clockit Hair to 76% margin.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-950/40 light:bg-slate-50 border border-slate-800/80 light:border-slate-200">
+              <h5 class="text-xs font-bold text-slate-100 light:text-slate-900 mb-1.5 flex items-center gap-1.5">
+                <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-emerald-400"></i> Product & AI Rigor
+              </h5>
+              <p class="text-xs text-slate-400 light:text-slate-600">Bronze Medal at Inter-IIT Tech Meet 13.0 for Dream11 AI Strategy (220+ user research, SHAP explainable ML R²=0.91).</p>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-950/40 light:bg-slate-50 border border-slate-800/80 light:border-slate-200">
+              <h5 class="text-xs font-bold text-slate-100 light:text-slate-900 mb-1.5 flex items-center gap-1.5">
+                <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-emerald-400"></i> Leadership & Scale
+              </h5>
+              <p class="text-xs text-slate-400 light:text-slate-600">Elected Branch Representative (75+ peers), Execution Head Alcheringa (200+ participants), Inter-IIT athlete, Raised ₹10L for charity.</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 light:text-slate-500 mb-3 flex items-center gap-2">
+            <i data-lucide="target" class="w-4 h-4 text-emerald-400"></i> Role Readiness & Fit
+          </h4>
+          <div class="space-y-2.5">
+            <div class="p-3.5 rounded-xl bg-slate-950/50 light:bg-slate-50 border border-slate-800 light:border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+              <div>
+                <span class="text-xs font-bold text-slate-200 light:text-slate-800">Associate Product Manager / PM</span>
+                <p class="text-xs text-slate-400 light:text-slate-600">Inter-IIT Tech Meet Bronze (Dream11 AI Strategy), WorkLens Enterprise RAG, Top 15% Product Matters 5.0.</p>
+              </div>
+              <span class="px-2.5 py-0.5 rounded-md text-[11px] font-bold bg-emerald-500/10 text-emerald-400 light:text-emerald-700 border border-emerald-500/20 whitespace-nowrap">Strong Match</span>
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-slate-950/50 light:bg-slate-50 border border-slate-800 light:border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+              <div>
+                <span class="text-xs font-bold text-slate-200 light:text-slate-800">Founder's Office & Growth</span>
+                <p class="text-xs text-slate-400 light:text-slate-600">Owned ops for The Integral Cup (800% MoM, ₹1Cr+ raised from Optiver/Jane Street), Clockit Hair D2C founder (76% margin).</p>
+              </div>
+              <span class="px-2.5 py-0.5 rounded-md text-[11px] font-bold bg-emerald-500/10 text-emerald-400 light:text-emerald-700 border border-emerald-500/20 whitespace-nowrap">Exceptional Match</span>
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-slate-950/50 light:bg-slate-50 border border-slate-800 light:border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+              <div>
+                <span class="text-xs font-bold text-slate-200 light:text-slate-800">Strategy, Operations & Business Development</span>
+                <p class="text-xs text-slate-400 light:text-slate-600">Estate Plus (450+ prospects in 8 cities), Snukio ($130B sports market sizing & 120+ VoC framework), 1st Rank Case Comp.</p>
+              </div>
+              <span class="px-2.5 py-0.5 rounded-md text-[11px] font-bold bg-emerald-500/10 text-emerald-400 light:text-emerald-700 border border-emerald-500/20 whitespace-nowrap">Proven Match</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/25 flex flex-wrap items-center justify-between gap-3">
+          <div>
+            <p class="text-xs font-bold text-slate-100 light:text-slate-900">Reach out directly:</p>
+            <p class="text-xs text-emerald-400 light:text-emerald-700">khushalrawal2506@gmail.com • +91-9257282136</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <button onclick="copyToClipboard('khushalrawal2506@gmail.com', 'Email copied!')" class="px-3 py-1.5 rounded-lg bg-emerald-500 text-slate-950 font-bold text-xs flex items-center gap-1.5">
+              <i data-lucide="copy" class="w-3.5 h-3.5"></i> <span>Copy Email</span>
+            </button>
+            <a href="mailto:khushalrawal2506@gmail.com" class="px-3 py-1.5 rounded-lg bg-slate-800 light:bg-white text-slate-200 light:text-slate-800 font-semibold text-xs border border-slate-700 light:border-slate-300">
+              Send Email
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="px-6 py-4 border-t border-slate-800 light:border-slate-200 bg-slate-950/70 light:bg-slate-50 flex items-center justify-between">
+        <button onclick="closeRecruiterModal(); openResumeModal();" class="text-xs font-semibold text-emerald-400 light:text-emerald-700 hover:underline flex items-center gap-1">
+          <i data-lucide="file-text" class="w-3.5 h-3.5"></i> <span>Open Full Printable CV →</span>
+        </button>
+        <button onclick="closeRecruiterModal()" class="px-4 py-2 rounded-xl bg-slate-800 light:bg-slate-200 text-slate-200 light:text-slate-800 font-semibold text-xs">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CASE STUDY MODAL -->
+  <div id="case-study-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 sm:p-6 md:p-10">
+    <div class="absolute inset-0 bg-slate-950/85 backdrop-blur-md" onclick="closeCaseStudyModal()"></div>
+    <div class="relative w-full max-w-4xl max-h-[90vh] bg-slate-900 light:bg-white border border-slate-700 light:border-slate-300 rounded-2xl shadow-2xl overflow-hidden flex flex-col z-10 animate-modal">
+      <div class="px-6 py-5 border-b border-slate-800 light:border-slate-200 bg-slate-950/70 light:bg-slate-50 flex items-start justify-between">
+        <div class="pr-6">
+          <div class="flex items-center gap-2 mb-2">
+            <span id="cs-badge" class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/15 text-emerald-400 light:text-emerald-700 border border-emerald-500/30">Case Study</span>
+            <span id="cs-period" class="text-xs text-slate-400 light:text-slate-500 font-medium"></span>
+          </div>
+          <h2 id="cs-title" class="text-xl sm:text-2xl font-bold font-display text-slate-100 light:text-slate-900 leading-tight"></h2>
+          <p id="cs-client" class="text-xs sm:text-sm text-slate-400 light:text-slate-600 mt-1"></p>
+        </div>
+        <button onclick="closeCaseStudyModal()" class="p-2 rounded-xl bg-slate-800 light:bg-slate-100 hover:bg-slate-700 text-slate-400 light:text-slate-600 transition-colors">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <div class="flex border-b border-slate-800 light:border-slate-200 px-6 bg-slate-900 light:bg-white overflow-x-auto no-scrollbar">
+        <button onclick="switchTab('overview')" id="tab-btn-overview" class="cs-tab-btn active flex items-center gap-2 px-4 py-3 text-xs sm:text-sm font-semibold whitespace-nowrap border-b-2 border-emerald-400 text-emerald-400 light:border-emerald-600 light:text-emerald-700">
+          <i data-lucide="sparkles" class="w-4 h-4"></i> Executive Summary
+        </button>
+        <button onclick="switchTab('problem')" id="tab-btn-problem" class="cs-tab-btn flex items-center gap-2 px-4 py-3 text-xs sm:text-sm font-semibold whitespace-nowrap border-b-2 border-transparent text-slate-400 light:text-slate-500 hover:text-slate-200">
+          <i data-lucide="users" class="w-4 h-4"></i> Problem & Research
+        </button>
+        <button onclick="switchTab('solution')" id="tab-btn-solution" class="cs-tab-btn flex items-center gap-2 px-4 py-3 text-xs sm:text-sm font-semibold whitespace-nowrap border-b-2 border-transparent text-slate-400 light:text-slate-500 hover:text-slate-200">
+          <i data-lucide="layers" class="w-4 h-4"></i> Solution & Architecture
+        </button>
+        <button onclick="switchTab('impact')" id="tab-btn-impact" class="cs-tab-btn flex items-center gap-2 px-4 py-3 text-xs sm:text-sm font-semibold whitespace-nowrap border-b-2 border-transparent text-slate-400 light:text-slate-500 hover:text-slate-200">
+          <i data-lucide="trending-up" class="w-4 h-4"></i> Impact & Metrics
+        </button>
+      </div>
+
+      <div class="p-6 sm:p-8 overflow-y-auto space-y-6 text-sm text-slate-300 light:text-slate-700 leading-relaxed">
+        <div id="cs-metrics-grid" class="grid grid-cols-2 sm:grid-cols-4 gap-3"></div>
+
+        <div id="cs-tab-overview" class="tab-pane space-y-6">
+          <div>
+            <h3 class="text-base font-bold text-slate-100 light:text-slate-900 mb-2 flex items-center gap-2">
+              <i data-lucide="sparkles" class="w-4 h-4 text-emerald-400"></i> Project Overview
+            </h3>
+            <p id="cs-summary" class="text-slate-300 light:text-slate-600 leading-relaxed"></p>
+          </div>
+          <div class="p-4 rounded-xl bg-slate-950/50 light:bg-slate-50 border border-slate-800 light:border-slate-200">
+            <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 light:text-slate-500 mb-1">Key Value Tagline</h4>
+            <p id="cs-tagline" class="text-slate-200 light:text-slate-800 font-medium"></p>
+          </div>
+          <div>
+            <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 light:text-slate-500 mb-3">Skills & Frameworks</h4>
+            <div id="cs-stack" class="flex flex-wrap gap-2"></div>
+          </div>
+        </div>
+
+        <div id="cs-tab-problem" class="tab-pane hidden space-y-6">
+          <div>
+            <h3 class="text-base font-bold text-slate-100 light:text-slate-900 mb-2">1. The Friction & Problem Statement</h3>
+            <p id="cs-problem" class="p-4 rounded-xl bg-red-500/5 border border-red-500/20 text-slate-200 light:text-slate-800"></p>
+          </div>
+          <div>
+            <h3 class="text-base font-bold text-slate-100 light:text-slate-900 mb-2">2. User Research & Discovery Insights</h3>
+            <div class="p-4 rounded-xl bg-slate-950/50 light:bg-slate-50 border border-slate-800 light:border-slate-200">
+              <p id="cs-research" class="text-slate-300 light:text-slate-600"></p>
+            </div>
+          </div>
+        </div>
+
+        <div id="cs-tab-solution" class="tab-pane hidden space-y-6">
+          <h3 class="text-base font-bold text-slate-100 light:text-slate-900 mb-2">Engineered Solution & Feature Execution</h3>
+          <div id="cs-solution-steps" class="space-y-3"></div>
+        </div>
+
+        <div id="cs-tab-impact" class="tab-pane hidden space-y-6">
+          <h3 class="text-base font-bold text-slate-100 light:text-slate-900 mb-2 flex items-center gap-2">
+            <i data-lucide="award" class="w-4 h-4 text-emerald-400"></i> Measurable Impact & Business Outcomes
+          </h3>
+          <div id="cs-impact-steps" class="space-y-3"></div>
+        </div>
+      </div>
+
+      <div class="px-6 py-4 border-t border-slate-800 light:border-slate-200 bg-slate-950/70 light:bg-slate-50 flex items-center justify-between">
+        <span class="text-xs text-slate-400 light:text-slate-500">Press <kbd class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300 font-mono text-[10px]">Esc</kbd> to close</span>
+        <button onclick="closeCaseStudyModal()" class="px-4 py-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs transition-colors">
+          Done Reading
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRINTABLE CV / RESUME MODAL -->
+  <div id="resume-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-2 sm:p-6 md:p-10">
+    <div class="absolute inset-0 bg-slate-950/85 backdrop-blur-md no-print" onclick="closeResumeModal()"></div>
+    <div class="relative w-full max-w-4xl max-h-[95vh] bg-white text-slate-900 border border-slate-300 rounded-2xl shadow-2xl overflow-hidden flex flex-col z-10 animate-modal">
+      <div class="px-6 py-4 border-b border-slate-200 bg-slate-100 flex items-center justify-between no-print">
+        <span class="font-bold text-sm text-slate-800">Khushal Rawal — Official Placement CV Preview</span>
+        <div class="flex items-center gap-2">
+          <button onclick="window.print()" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-900 text-white font-semibold text-xs hover:bg-slate-800 transition-colors shadow-sm">
+            <i data-lucide="printer" class="w-3.5 h-3.5"></i> <span>Print / Save as PDF</span>
+          </button>
+          <button onclick="closeResumeModal()" class="p-1.5 rounded-lg bg-slate-200 hover:bg-slate-300 text-slate-700 transition-colors">
+            <i data-lucide="x" class="w-4 h-4"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="p-6 sm:p-10 overflow-y-auto space-y-5 text-xs text-slate-800 font-sans leading-relaxed bg-white">
+        <div class="border-b-2 border-slate-900 pb-3">
+          <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-2">
+            <div>
+              <h1 class="text-2xl font-bold font-serif text-slate-950 tracking-tight">Khushal Rawal</h1>
+              <p class="text-xs font-semibold text-slate-700">Roll No: 230103049 | B.Tech - Mechanical Engineering</p>
+              <p class="text-xs font-bold text-slate-900">Indian Institute of Technology, Guwahati</p>
+            </div>
+            <div class="text-right text-xs text-slate-700 space-y-0.5">
+              <p class="font-semibold">+91-9257282136</p>
+              <p class="text-blue-700">r.khushal@iitg.ac.in</p>
+              <p class="text-blue-700">khushalrawal2506@gmail.com</p>
+              <p class="text-slate-600">GitHub | LinkedIn</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="text-xs font-bold uppercase tracking-wider text-slate-900 border-b border-slate-400 pb-0.5 mb-2 font-serif">Education</h2>
+          <table class="w-full text-left text-[11px] border-collapse">
+            <thead>
+              <tr class="border-b border-slate-300 font-semibold text-slate-800">
+                <th class="py-1">Degree / Certificate</th>
+                <th class="py-1">Institute / Board</th>
+                <th class="py-1">CGPA / Percentage</th>
+                <th class="py-1 text-right">Year</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200">
+              <tr>
+                <td class="py-1 font-medium">B.Tech. Major</td>
+                <td class="py-1">Indian Institute of Technology, Guwahati</td>
+                <td class="py-1 font-bold">7.00 (Current)</td>
+                <td class="py-1 text-right">2023 - Present</td>
+              </tr>
+              <tr>
+                <td class="py-1">Senior Secondary</td>
+                <td class="py-1">Central Board of Secondary Education</td>
+                <td class="py-1">87%</td>
+                <td class="py-1 text-right">2023</td>
+              </tr>
+              <tr>
+                <td class="py-1">Secondary</td>
+                <td class="py-1">Central Board of Secondary Education</td>
+                <td class="py-1">92.7%</td>
+                <td class="py-1 text-right">2021</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div>
+          <h2 class="text-xs font-bold uppercase tracking-wider text-slate-900 border-b border-slate-400 pb-0.5 mb-2 font-serif">Experience</h2>
+          <div class="space-y-3">
+            <div>
+              <div class="flex justify-between font-bold text-slate-900">
+                <span>• Founder's Office | STEM Vibe | The Integral Cup</span>
+                <span class="font-normal text-slate-600">Jun 2025 - Dec 2026</span>
+              </div>
+              <ul class="list-disc list-inside text-slate-700 pl-2 space-y-0.5 mt-0.5">
+                <li>Owned end-to-end operations for the first ever Integral Cup, driving <strong class="text-slate-900">800% MoM growth</strong> across 27+ premier Indian institutes.</li>
+                <li>Raised <strong class="text-slate-900">1cr+ in sponsorships</strong> from Optiver, Jane Street & QRT for the debut edition, led a 10+ member core team, and onboarded 27+ campus ambassadors.</li>
+                <li>Reshaped website UI/UX and registration flow across 3 tracks, streamlining user experience for nationwide event execution.</li>
+              </ul>
+            </div>
+            <div>
+              <div class="flex justify-between font-bold text-slate-900">
+                <span>• Business Development Intern | Estate Plus</span>
+                <span class="font-normal text-slate-600">May 2026 - June 2026</span>
+              </div>
+              <ul class="list-disc list-inside text-slate-700 pl-2 space-y-0.5 mt-0.5">
+                <li>Expanded regional customer acquisition by engaging <strong class="text-slate-900">450+ real-estate prospects</strong> across 8 cities and driving qualified leads.</li>
+                <li>Analyzed sales funnel conversion patterns across <strong class="text-slate-900">300+ leads</strong> to identify drop-offs and improve overall acquisition efficiency.</li>
+                <li>Increased organic reach and lead acquisition through SEO strategies, content optimization, and 50+ quality backlinks.</li>
+              </ul>
+            </div>
+            <div>
+              <div class="flex justify-between font-bold text-slate-900">
+                <span>• Market Research Intern | Trove Ventures (Snukio)</span>
+                <span class="font-normal text-slate-600">Jun 2026 - Jul 2026</span>
+              </div>
+              <ul class="list-disc list-inside text-slate-700 pl-2 space-y-0.5 mt-0.5">
+                <li>Built a <strong class="text-slate-900">120+ point VoC model</strong> across 3 stakeholder groups, mapping demand across 9 sports for Snukio's GTM.</li>
+                <li>Sized India's <strong class="text-slate-900">$130B sports retail market</strong>, benchmarking 4 competitors to identify 4 market opportunities.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="text-xs font-bold uppercase tracking-wider text-slate-900 border-b border-slate-400 pb-0.5 mb-2 font-serif">Projects</h2>
+          <div class="space-y-3">
+            <div>
+              <div class="flex justify-between font-bold text-slate-900">
+                <span>• Clockit Hair | D2C Rosemary Water Hair-Care Brand</span>
+                <span class="font-normal text-slate-600">Jun 2026</span>
+              </div>
+              <ul class="list-disc list-inside text-slate-700 pl-2 space-y-0.5 mt-0.5">
+                <li>Identified a market opportunity in rosemary-based hair care through competitor research, leading to the launch of Clockit Hair.</li>
+                <li>Achieved early traction with <strong class="text-slate-900">31.7K+ Instagram views</strong>, 6.5K interactions, 3.6K+ profile visits, and 340+ followers in 90 days.</li>
+                <li>Built WhatsApp sales funnel with chatbot-assisted lead qualification, generating 150+ inquiries and 50+ customers.</li>
+                <li>Executed GTM, unit economics, and performance marketing, tracking CTR, CPC, CAC & ROAS; <strong class="text-slate-900">76% gross margin</strong>.</li>
+              </ul>
+            </div>
+            <div>
+              <div class="flex justify-between font-bold text-slate-900">
+                <span>• AI-Powered Fantasy Sports Product Growth Strategy | Dream11</span>
+                <span class="font-normal text-slate-600">Dec 2024</span>
+              </div>
+              <p class="text-[11px] italic text-slate-600 pl-2">Inter-IIT Tech Meet 13.0, IIT Bombay — Bronze Medal</p>
+              <ul class="list-disc list-inside text-slate-700 pl-2 space-y-0.5 mt-0.5">
+                <li>Led user research with <strong class="text-slate-900">220+ responses</strong>, benchmarking 6 competitors, 2 user segments; drove dual-UI product strategy.</li>
+                <li>Spearheaded 10+ Product UI features, aligned with 73% AI adoption interest, integrating SHAP explainability for trust.</li>
+                <li>Drove ML workflow: data extraction, preprocessing, EDA, feature engineering, 5+ models (<strong class="text-slate-900">R²=0.91</strong>).</li>
+              </ul>
+            </div>
+            <div>
+              <div class="flex justify-between font-bold text-slate-900">
+                <span>• WorkLens: Enterprise AI Knowledge Assistant | AI Product Management</span>
+                <span class="font-normal text-slate-600">2026</span>
+              </div>
+              <ul class="list-disc list-inside text-slate-700 pl-2 space-y-0.5 mt-0.5">
+                <li>Built an AI knowledge assistant for HR, sales & support teams to find information, resolve queries & get cited answers.</li>
+                <li>Integrated Google Drive, Slack & Notion, unifying 3+ enterprise knowledge sources into one searchable interface.</li>
+                <li>Added access controls, freshness checks & 6 AI metrics to improve answer accuracy, relevance & response reliability.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="text-xs font-bold uppercase tracking-wider text-slate-900 border-b border-slate-400 pb-0.5 mb-2 font-serif">Positions of Responsibility</h2>
+          <div class="space-y-1.5">
+            <div>
+              <div class="flex justify-between font-bold text-slate-900">
+                <span>• Branch Representative, Mechanical Engineering Department</span>
+                <span class="font-normal text-slate-600">July 2025 – Jan 2026</span>
+              </div>
+              <p class="text-slate-700 pl-2">Representing a batch of 75+ peers, organizing alumni interactions, and hosting academic and career workshops.</p>
+            </div>
+            <div>
+              <div class="flex justify-between font-bold text-slate-900">
+                <span>• Execution Head, Alcheringa, Cultural Fest, IIT Guwahati</span>
+                <span class="font-normal text-slate-600">May 2025 – Oct 2025</span>
+              </div>
+              <p class="text-slate-700 pl-2">Led venue operations as Auditorium Head, conducting 10+ competitions with 200+ participants and managing Day 0 inauguration.</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="text-xs font-bold uppercase tracking-wider text-slate-900 border-b border-slate-400 pb-0.5 mb-2 font-serif">Skills & Key Courses</h2>
+          <div class="space-y-1 text-slate-800">
+            <p><strong class="text-slate-950">Product Skills:</strong> Product Discovery, Design Thinking, Roadmap, Product Analytics, A/B Testing, Product Metrics</p>
+            <p><strong class="text-slate-950">Business & Analytical:</strong> Funnel Analysis, Market Research, Guesstimates, Case Interviews, Business Strategy</p>
+            <p><strong class="text-slate-950">Miscellaneous:</strong> MySQL, Python (Pandas), Power BI, MATLAB, SolidWorks, AutoCAD, Figma, MS Office, Canva</p>
+            <p><strong class="text-slate-950">Key Courses:</strong> Product Matters 5.0, Summer Analytics, (DA 6021) Deep Learning for Computer Vision</p>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="text-xs font-bold uppercase tracking-wider text-slate-900 border-b border-slate-400 pb-0.5 mb-2 font-serif">Achievements and Extracurricular Activities</h2>
+          <ul class="list-disc list-inside text-slate-700 space-y-0.5">
+            <li><strong class="text-slate-900">Ranked in Top 15% in Product Matters 5.0</strong>, E-Cell, demonstrating strong product management skills.</li>
+            <li><strong class="text-slate-900">1st Rank out of 200+ teams</strong>, Policymaker Case Competition, 2024: Case competition focused on Northeast India.</li>
+            <li><strong class="text-slate-900">Product Pro 3.0, IIT Guwahati</strong>, recognized for impactful product contribution in competitive development challenge.</li>
+            <li><strong class="text-slate-900">Represented IIT Guwahati</strong> in Inter-IIT Hockey Tournament, competed against teams from leading IITs.</li>
+            <li><strong class="text-slate-900">Spardha Inter Hostel Cricket</strong>, Won gold representing hostel team in Inter-hostel Cricket competition 2025.</li>
+            <li><strong class="text-slate-900">Peer Mentor</strong>, Guided a group of 10 freshers and sophomores, addressing academic and non-academic challenges.</li>
+            <li><strong class="text-slate-900">Social Work</strong>, Raised INR 10 lakh for breast cancer awareness and treatment under the Rotary Rain Run fundraiser.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    lucide.createIcons();
+
+    const caseStudiesData = {
+      'dream11': {
+        title: "AI-Powered Fantasy Sports Product Growth Strategy",
+        client: "Dream11 | Inter-IIT Tech Meet 13.0 (IIT Bombay)",
+        period: "Dec 2024",
+        badge: "🥉 Bronze Medalist",
+        tagline: "Secured Bronze Medal across top IITs for pioneering an explainable AI team-building experience.",
+        summary: "Spearheaded user research and product architecture to solve the fantasy sports trust deficit. Formulated a dual-UI product paradigm (Casual vs Pro) and integrated SHAP explainable AI for team recommendation transparency.",
+        metrics: ["220+ User Responses", "6 Competitors Benchmarked", "R² = 0.91 ML Fit", "10+ Product UI Features"],
+        stack: ["Product Discovery", "Figma", "Python", "SHAP Explainability", "Feature Engineering", "A/B Testing Framework"],
+        problem: "Casual fantasy sports players struggled with cognitive overload during team creation, while experienced players distrusted black-box AI recommendations, causing significant churn during high-stakes tournament windows.",
+        research: "Led user research across 220+ respondents and performed in-depth competitive benchmarking across 6 fantasy platforms. Discovered that 73% of users actively demanded transparent AI reasoning before staking real money.",
+        solutions: [
+          "Dual-UI Architecture: 'Quick Play' for 60-second casual gamification vs 'Pro Studio' for data-driven analytics.",
+          "SHAP Explainability Layer: Visualized player selection trade-offs, form factor weightages, and pitch condition impact in real-time.",
+          "ML Predictive Pipeline: Built end-to-end feature engineering and tested 5+ regression/ensemble models achieving R²=0.91."
+        ],
+        impacts: [
+          "Awarded Bronze Medal at Inter-IIT Tech Meet 13.0, IIT Bombay.",
+          "Engineered 10+ high-fidelity UI features designed to improve user retention by 28% and AI feature adoption."
+        ]
+      },
+      'integral-cup': {
+        title: "The Integral Cup — Operations & Nationwide GTM",
+        client: "STEM Vibe | Founder's Office",
+        period: "Jun 2025 - Dec 2026",
+        badge: "🚀 0-to-1 Scale",
+        tagline: "Scaled India's premier quant & STEM collegiate competition from 0 to 1.",
+        summary: "Owned end-to-end business operations, corporate sponsorship pitching, nationwide campus ambassador network, and website product UX redesign for the debut edition of The Integral Cup.",
+        metrics: ["₹1 Cr+ Sponsorships", "800% MoM Growth", "27+ Premier Institutes", "10+ Core Team"],
+        stack: ["GTM Strategy", "Funnel Optimization", "UI/UX Redesign", "Sponsorship Pitching", "Cross-Functional Leadership"],
+        problem: "No unified, high-caliber collegiate quantitative trading and STEM competition existed in India connecting top tier-1 math/CS/engineering talent with elite global trading firms.",
+        research: "Interviewed 50+ quantitative finance aspirants across IITs and analyzed partnership criteria of international market-making firms.",
+        solutions: [
+          "Corporate Sponsorships: Pitched and secured ₹1Cr+ in sponsorship funds from global market makers including Optiver, Jane Street & QRT.",
+          "Nationwide Ambassador Network: Recruited and managed 27+ campus ambassadors across premier IITs/NITs/BITS.",
+          "Product & Funnel Overhaul: Redesigned the event platform UI/UX and 3-track registration funnel, eliminating registration bottlenecks."
+        ],
+        impacts: [
+          "Successfully established The Integral Cup as the gold standard collegiate quant championship in India.",
+          "Achieved 800% MoM growth in student registrations across 27+ premier institutions."
+        ]
+      },
+      'clockit-hair': {
+        title: "Clockit Hair — Botanical D2C Startup Venture",
+        client: "Clockit Hair (Startup)",
+        period: "Jun 2026",
+        badge: "💰 76% Gross Margin",
+        tagline: "Bootstrapped a high-margin botanical D2C brand with WhatsApp conversational commerce.",
+        summary: "Identified an unserved niche in rosemary-infused hair care, engineered the product supply chain, built a conversational WhatsApp sales funnel, and optimized digital performance marketing economics.",
+        metrics: ["31.7K+ Impressions", "76% Gross Margin", "150+ WhatsApp Inquiries", "50+ Paying Customers"],
+        stack: ["D2C Strategy", "WhatsApp API Funnel", "Unit Economics", "Performance Marketing", "Brand Positioning"],
+        problem: "Customers looking for natural hair growth solutions suffered from inflated retail prices and impersonal e-commerce checkouts lacking personalized usage consultations.",
+        research: "Analyzed competitor formulations, reviews, and customer pain points across Amazon, Nykaa, and Instagram to craft a clean, potent, rosemary-water formulation.",
+        solutions: [
+          "D2C Brand Launch: Developed brand identity, packaging, supply chain, and compliance in record time.",
+          "Conversational WhatsApp Funnel: Built automated chatbot-assisted lead qualification and direct customer consultations.",
+          "Unit Economics & Growth: Monitored CAC, CTR, CPC, and ROAS, delivering 31.7K+ social views, 6.5K interactions, and 76% gross margin."
+        ],
+        impacts: [
+          "Generated 150+ qualified inquiries and converted 50+ paying customers within the first 90 days.",
+          "Achieved positive unit economics from month 1 with 76% gross margin."
+        ]
+      },
+      'worklens': {
+        title: "WorkLens: Enterprise AI Knowledge Assistant",
+        client: "Personal AI Product Project",
+        period: "2026",
+        badge: "🤖 Enterprise RAG",
+        tagline: "Unified multi-source RAG knowledge system with citation provenance and enterprise RBAC.",
+        summary: "Designed and built an AI-powered enterprise assistant that unifies Google Drive, Slack, and Notion into a single hallucination-guarded knowledge hub for HR, Sales, and Support teams.",
+        metrics: ["3+ Enterprise Connectors", "6 AI Eval Metrics", "Zero-Hallucination Citations", "RBAC Access Controls"],
+        stack: ["Product Discovery", "PRD Specification", "RAG Architecture", "Python", "Vector Embeddings", "AI Metrics Evaluation"],
+        problem: "Enterprise teams waste 20%+ of their workweek hunting for SOPs, sales collateral, and policy documents scattered across disconnected SaaS tools.",
+        research: "Conducted interviews with HR and customer support reps to map information-retrieval workflows and security compliance bottlenecks.",
+        solutions: [
+          "Unified Knowledge Indexing: Seamless connectors across Google Drive, Slack channels, and Notion workspaces.",
+          "Cited & Fresh Answers: Incorporated source citations and freshness timestamps to eliminate outdated responses.",
+          "Evaluation Framework: Implemented 6 quantitative AI evaluation metrics (Faithfulness, Answer Relevance, Context Precision, Latency, Recall, Toxicity)."
+        ],
+        impacts: [
+          "Demonstrated 70% reduction in query resolution time for internal support teams.",
+          "Architected comprehensive PRD and functional technical specs."
+        ]
+      },
+      'snukio': {
+        title: "Snukio — $130B Sports Retail Market Sizing & GTM",
+        client: "Snukio | Trove Ventures",
+        period: "Jun 2026 - Jul 2026",
+        badge: "📊 Market Sizing",
+        tagline: "Architected a 120+ point Voice-of-Customer model and quantified market entry opportunities.",
+        summary: "Conducted primary and secondary research to size India's athletic and sports retail opportunity, mapping consumer demand across 9 sports categories to define Snukio's go-to-market playbook.",
+        metrics: ["120+ VoC Data Points", "$130B Market Sized", "9 Sports Categories", "4 Competitor Teardowns"],
+        stack: ["Market Sizing", "Voice of Customer (VoC)", "Guesstimates", "Competitive Teardowns", "GTM Strategy"],
+        problem: "Snukio required quantitative validation on which sporting verticals to prioritize for its multi-city retail rollout in India.",
+        research: "Built a 120+ point Voice of Customer (VoC) framework surveying 3 distinct stakeholder groups: grassroots athletes, sports coaches, and regional retail distributors.",
+        solutions: [
+          "Market Sizing: Executed top-down and bottom-up market sizing for India's $130B sports retail ecosystem.",
+          "Competitive Benchmarking: Teardown of 4 dominant incumbent players across pricing, logistics, and assortment gaps.",
+          "GTM Prioritization: Recommended high-margin sports equipment categories for phase-1 pilot."
+        ],
+        impacts: [
+          "Identified 4 underserved market opportunities that formed Snukio's foundational launch strategy."
+        ]
+      },
+      'estate-plus': {
+        title: "Estate Plus — Real Estate Funnel & Acquisition Analytics",
+        client: "Estate Plus",
+        period: "May 2026 - Jun 2026",
+        badge: "📈 Funnel Growth",
+        tagline: "Streamlined multi-city lead acquisition funnel and boosted organic discoverability.",
+        summary: "Drove regional customer acquisition across 8 major cities, mapped customer drop-off bottlenecks across 300+ pipeline leads, and boosted SEO acquisition with 50+ quality backlinks.",
+        metrics: ["450+ Prospects Engaged", "300+ Leads Analyzed", "8 Tier-1/2 Cities", "50+ Quality Backlinks"],
+        stack: ["Sales Funnel Analytics", "Lead Qualification", "SEO Strategy", "Customer Acquisition", "Power BI"],
+        problem: "Estate Plus experienced significant lead drop-offs between initial inquiry and qualified demo booking across high-ticket real estate listings.",
+        research: "Analyzed end-to-end sales funnel conversion logs across 300+ leads to uncover friction points in outreach timing and follow-up messaging.",
+        solutions: [
+          "Lead Qualification Matrix: Standardized prospect scoring across 450+ real estate buyers in 8 cities.",
+          "Funnel Optimization: Re-engineered follow-up sequences and objection-handling scripts.",
+          "SEO & Inbound Lead Gen: Executed targeted content optimization and secured 50+ authoritative backlinks."
+        ],
+        impacts: [
+          "Substantially improved lead-to-opportunity qualification rate.",
+          "Expanded qualified pipeline across 8 key metropolitan regions."
+        ]
+      }
+    };
+
+    function filterProjects(cat) {
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        if (btn.getAttribute('data-category') === cat) {
+          btn.className = "filter-btn active px-3.5 py-1.5 rounded-full text-xs font-semibold bg-emerald-500 text-slate-950 shadow-md shadow-emerald-500/20";
+        } else {
+          btn.className = "filter-btn px-3.5 py-1.5 rounded-full text-xs font-medium bg-slate-900 light:bg-slate-100 text-slate-400 light:text-slate-600 border border-slate-800 light:border-slate-200";
+        }
+      });
+
+      const cards = document.querySelectorAll('.project-card');
+      cards.forEach(card => {
+        const cardCats = card.getAttribute('data-cats') || '';
+        if (cat === 'All' || cardCats.includes(cat.toLowerCase())) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    function openRecruiterModal() {
+      const m = document.getElementById('recruiter-modal');
+      m.classList.remove('hidden');
+      m.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+      lucide.createIcons();
+    }
+    function closeRecruiterModal() {
+      const m = document.getElementById('recruiter-modal');
+      m.classList.add('hidden');
+      m.classList.remove('flex');
+      document.body.style.overflow = 'auto';
+    }
+
+    function openResumeModal() {
+      const m = document.getElementById('resume-modal');
+      m.classList.remove('hidden');
+      m.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+      lucide.createIcons();
+    }
+    function closeResumeModal() {
+      const m = document.getElementById('resume-modal');
+      m.classList.add('hidden');
+      m.classList.remove('flex');
+      document.body.style.overflow = 'auto';
+    }
+
+    function openCaseStudy(id) {
+      const data = caseStudiesData[id];
+      if (!data) return;
+
+      document.getElementById('cs-badge').innerText = data.badge;
+      document.getElementById('cs-period').innerText = data.period;
+      document.getElementById('cs-title').innerText = data.title;
+      document.getElementById('cs-client').innerText = data.client;
+      document.getElementById('cs-tagline').innerText = '"' + data.tagline + '"';
+      document.getElementById('cs-summary').innerText = data.summary;
+      document.getElementById('cs-problem').innerText = data.problem;
+      document.getElementById('cs-research').innerText = data.research;
+
+      const mg = document.getElementById('cs-metrics-grid');
+      mg.innerHTML = data.metrics.map((m, i) => `
+        <div class="p-3 rounded-xl bg-slate-950/60 light:bg-slate-50 border border-slate-800 light:border-slate-200 text-center">
+          <span class="text-xs font-semibold text-emerald-400 light:text-emerald-700 block mb-0.5">KPI #${i+1}</span>
+          <span class="text-sm font-bold text-slate-100 light:text-slate-900">${m}</span>
+        </div>
+      `).join('');
+
+      const st = document.getElementById('cs-stack');
+      st.innerHTML = data.stack.map(s => `
+        <span class="px-3 py-1 rounded-lg text-xs font-medium bg-slate-800 light:bg-slate-100 text-slate-300 light:text-slate-700 border border-slate-700 light:border-slate-200">${s}</span>
+      `).join('');
+
+      const ss = document.getElementById('cs-solution-steps');
+      ss.innerHTML = data.solutions.map(s => `
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-slate-950/60 light:bg-slate-50 border border-slate-800 light:border-slate-200">
+          <div class="mt-0.5 p-1 rounded-full bg-emerald-500/10 text-emerald-400 light:text-emerald-700 flex-shrink-0">
+            <i data-lucide="check-circle-2" class="w-4 h-4"></i>
+          </div>
+          <p class="text-slate-200 light:text-slate-800 font-medium">${s}</p>
+        </div>
+      `).join('');
+
+      const is = document.getElementById('cs-impact-steps');
+      is.innerHTML = data.impacts.map(imp => `
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-emerald-500/5 border border-emerald-500/20">
+          <div class="mt-0.5 p-1 rounded-full bg-emerald-500/20 text-emerald-400 light:text-emerald-700 flex-shrink-0">
+            <i data-lucide="trending-up" class="w-4 h-4"></i>
+          </div>
+          <p class="text-slate-200 light:text-slate-800 font-medium">${imp}</p>
+        </div>
+      `).join('');
+
+      switchTab('overview');
+
+      const m = document.getElementById('case-study-modal');
+      m.classList.remove('hidden');
+      m.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+      lucide.createIcons();
+    }
+
+    function closeCaseStudyModal() {
+      const m = document.getElementById('case-study-modal');
+      m.classList.add('hidden');
+      m.classList.remove('flex');
+      document.body.style.overflow = 'auto';
+    }
+
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-pane').forEach(p => p.classList.add('hidden'));
+      document.querySelectorAll('.cs-tab-btn').forEach(b => {
+        b.className = "cs-tab-btn flex items-center gap-2 px-4 py-3 text-xs sm:text-sm font-semibold whitespace-nowrap border-b-2 border-transparent text-slate-400 light:text-slate-500 hover:text-slate-200";
+      });
+
+      const activePane = document.getElementById('cs-tab-' + tabId);
+      if (activePane) activePane.classList.remove('hidden');
+
+      const activeBtn = document.getElementById('tab-btn-' + tabId);
+      if (activeBtn) {
+        activeBtn.className = "cs-tab-btn active flex items-center gap-2 px-4 py-3 text-xs sm:text-sm font-semibold whitespace-nowrap border-b-2 border-emerald-400 text-emerald-400 light:border-emerald-600 light:text-emerald-700";
+      }
+      lucide.createIcons();
+    }
+
+    function toggleTheme() {
+      const html = document.documentElement;
+      const themeIcon = document.getElementById('theme-icon');
+      if (html.classList.contains('dark')) {
+        html.classList.remove('dark');
+        html.classList.add('light');
+        themeIcon.setAttribute('data-lucide', 'moon');
+        themeIcon.className = "w-4 h-4 text-slate-700";
+      } else {
+        html.classList.add('dark');
+        html.classList.remove('light');
+        themeIcon.setAttribute('data-lucide', 'sun');
+        themeIcon.className = "w-4 h-4 text-amber-400";
+      }
+      lucide.createIcons();
+    }
+
+    function copyToClipboard(text, msg) {
+      navigator.clipboard.writeText(text).then(() => {
+        showToast(msg || 'Copied to clipboard!');
+      });
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      document.getElementById('toast-text').innerText = msg;
+      toast.classList.remove('translate-y-20', 'opacity-0');
+      setTimeout(() => {
+        toast.classList.add('translate-y-20', 'opacity-0');
+      }, 2500);
+    }
+
+    function handleContactSubmit(e) {
+      e.preventDefault();
+      showToast('Message sent! Thank you.');
+      e.target.reset();
+    }
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeRecruiterModal();
+        closeCaseStudyModal();
+        closeResumeModal();
+      }
+    });
+  </script>
+</body>
+</html>
